@@ -697,6 +697,9 @@ header {
   .s-logo img {
     max-width: 200px; }
 
+.s-navigation {
+  background-color: #04253a; }
+
 .s-toolbar {
   display: -ms-grid;
   display: grid;
