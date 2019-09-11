@@ -1,0 +1,730 @@
+@charset "UTF-8";
+/* -----------------------------------------------------------------------------
+    Functions
+----------------------------------------------------------------------------- */
+/* Is color
+----------------------------------------------------------------------------- */
+/* Z-index
+----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+    Mixins
+----------------------------------------------------------------------------- */
+/* Tint 
+----------------------------------------------------------------------------- */
+/* Shade
+----------------------------------------------------------------------------- */
+/* Defined Media Queries
+// https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+----------------------------------------------------------------------------- */
+/* Undefined Media Queries
+----------------------------------------------------------------------------- */
+/* Font-sizes
+----------------------------------------------------------------------------- */
+/* Z-index
+----------------------------------------------------------------------------- */
+/* Clearfix
+----------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700|Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+/* -----------------------------------------------------------------------------
+  *Thursday 06 Dec 2018 - Time: 08:26* 
+	Typography
+----------------------------------------------------------------------------- */
+/* Body
+----------------------------------------------------------------------------- */
+body {
+  margin: 0;
+  color: #454545;
+  font-family: "Open sans";
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.618rem; }
+  body.dark {
+    color: #f3f3f3;
+    background-color: #454545; }
+
+/* Headers
+----------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5,
+.font-size-uber, .font-size-hero {
+  color: #2e2e2e;
+  font-family: "Maven pro";
+  font-weight: 400;
+  margin: 8px 0 0 0; }
+
+.font-size-uber {
+  font-size: 83px;
+  font-size: 5.1875rem;
+  line-height: 134px;
+  line-height: 8.39338rem; }
+
+.font-size-hero {
+  font-size: 69px;
+  font-size: 4.3125rem;
+  line-height: 112px;
+  line-height: 6.97763rem; }
+
+h1, .h1 {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 78px;
+  line-height: 4.854rem; }
+
+h2, .h2 {
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 65px;
+  line-height: 4.045rem; }
+
+h3, .h3 {
+  font-size: 33px;
+  font-size: 2.0625rem;
+  line-height: 53px;
+  line-height: 3.33713rem; }
+
+h4, .h4 {
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 45px;
+  line-height: 2.8315rem; }
+
+h5, .h5 {
+  font-size: 23px;
+  font-size: 1.4375rem;
+  line-height: 37px;
+  line-height: 2.32588rem; }
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5,
+.dark .h1, .dark .h2, .dark .h3, .dark .h4, .dark .h5,
+.dark .font-size-uber, .dark .font-size-hero {
+  color: #d8d8d8; }
+
+/* Types
+----------------------------------------------------------------------------- */
+.font-size-lead, .font-size-small, .font-size-caption, .font-size-tiny {
+  color: #454545;
+  font-family: "Open sans";
+  margin: 16px 0 0 0; }
+
+.font-size-lead {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 31px;
+  line-height: 1.92138rem; }
+
+.font-size-small {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 21px;
+  line-height: 1.31463rem; }
+
+.font-size-caption {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  line-height: 18px;
+  line-height: 1.11238rem; }
+
+.font-size-tiny {
+  font-size: 9px;
+  font-size: 0.5625rem;
+  line-height: 15px;
+  line-height: 0.91013rem; }
+
+.dark .font-size-lead, .dark .font-size-small, .dark .font-size-caption, .dark .font-size-tiny {
+  color: #d8d8d8; }
+
+/* Paragraps
+----------------------------------------------------------------------------- */
+p {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.618rem;
+  margin: 16px 0 0 0; }
+
+/* Blockquote
+----------------------------------------------------------------------------- */
+blockquote {
+  border-left: 1px solid #08436a;
+  margin: 16px 0 0 0;
+  padding: 4px 0 4px 16px; }
+  blockquote cite {
+    color: #b0b0b0;
+    display: block;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 21px;
+    line-height: 1.31463rem; }
+    blockquote cite:before {
+      content: '- '; }
+
+/* Figcaption
+----------------------------------------------------------------------------- */
+figcaption {
+  color: #b0b0b0;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  line-height: 18px;
+  line-height: 1.11238rem;
+  padding: 4px; }
+
+/* Small
+----------------------------------------------------------------------------- */
+small, .small {
+  color: #b0b0b0;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 21px;
+  line-height: 1.31463rem; }
+
+/* Mark
+----------------------------------------------------------------------------- */
+mark {
+  background-color: #f3f3f3;
+  color: #08436a;
+  padding: 0 8px; }
+
+/* Horizontal Rules
+----------------------------------------------------------------------------- */
+hr {
+  border: none;
+  border-top: 1px solid #d8d8d8;
+  height: 1px;
+  margin: 16px 0; }
+
+/* Links
+----------------------------------------------------------------------------- */
+a {
+  color: rgba(8, 67, 106, 0.72);
+  text-decoration: none;
+  padding: 0 0 4px 0;
+  border-bottom: 1px dotted rgba(8, 67, 106, 0.16);
+  -webkit-transition: color 300ms ease, border-color 300ms ease;
+  -o-transition: color 300ms ease, border-color 300ms ease;
+  transition: color 300ms ease, border-color 300ms ease; }
+  a:hover, a:active, a:focus {
+    color: #08436a;
+    border-color: rgba(8, 67, 106, 0.64); }
+  a:focus {
+    outline: none; }
+
+.dark a {
+  color: rgba(216, 216, 216, 0.72);
+  border-bottom: 1px dotted rgba(216, 216, 216, 0.4); }
+  .dark a:hover, .dark a:active, .dark a:focus {
+    color: white;
+    border-color: #d8d8d8; }
+
+/* Selection
+----------------------------------------------------------------------------- */
+::-moz-selection {
+  background-color: #ced9e1;
+  color: #052e48; }
+::selection {
+  background-color: #ced9e1;
+  color: #052e48; }
+
+/* -----------------------------------------------------------------------------
+	*Wednesday 12 Dec 2018 - Time: 08:19*   
+	Layout
+----------------------------------------------------------------------------- */
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-smooth: antialiased;
+  font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/**
+ * Remove inner padding and
+ * border in Firefox 4+
+ */
+::-moz-focus-inner {
+  border: none;
+  padding: 0; }
+
+/**
+ * Hide OS controls for Windows
+ * http://msdn.microsoft.com/en-us/library/windows/apps/hh465742.aspx
+ */
+::-ms-expand {
+  display: none; }
+
+/**
+ * Hide clear button in input fields for Windows
+ * https://msdn.microsoft.com/en-us/library/windows/apps/hh465740.aspx
+ */
+::-ms-clear {
+  display: none;
+  height: 0;
+  width: 0; }
+
+/* -----------------------------------------------------------------------------
+	*Wednesday 19 Dec 2018 - Time: 10:59*
+	Media
+----------------------------------------------------------------------------- */
+img {
+  vertical-align: middle; }
+
+figure {
+  margin: 0; }
+
+/* -----------------------------------------------------------------------------
+	*Wednesday 19 Dec 2018 - Time: 07:50*
+	Utilities Text
+----------------------------------------------------------------------------- */
+/* Text Style 
+----------------------------------------------------------------------------- */
+.ns-text-bold {
+  font-weight: 700; }
+
+.ns-text-italic {
+  font-style: italic; }
+
+.ns-text-underline {
+  text-decoration: underline; }
+
+/* Text alignment
+----------------------------------------------------------------------------- */
+.ns-text-left {
+  text-align: left; }
+
+.ns-text-right {
+  text-align: right; }
+
+.ns-text-center {
+  text-align: center; }
+
+.ns-text-justify {
+  text-align: justify; }
+
+/* Text transform
+----------------------------------------------------------------------------- */
+.ns-text-lowercase {
+  text-transform: lowercase; }
+
+.ns-text-uppercase {
+  text-transform: uppercase; }
+
+.ns-text-capitalize {
+  text-transform: capitalize; }
+
+/* Text color
+----------------------------------------------------------------------------- */
+.ns-text-primary {
+  color: #08436a; }
+
+.ns-text-succes {
+  color: #32b400; }
+
+.ns-text-warning {
+  color: #f9b01e; }
+
+.ns-text-danger {
+  color: #da291c; }
+
+.ns-text-light {
+  color: #d8d8d8; }
+
+.ns-text-xlight {
+  color: #f3f3f3; }
+
+/* Overflow
+----------------------------------------------------------------------------- */
+.ns-text-truncate {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+/* Text accessibility
+----------------------------------------------------------------------------- */
+.ns-text-readable {
+  max-width: 45rem; }
+
+/* -----------------------------------------------------------------------------
+	*Wednesday 19 Dec 2018 - Time: 09:36*
+	Spacing
+----------------------------------------------------------------------------- */
+/* Margin
+----------------------------------------------------------------------------- */
+.ns-margin-xs {
+  margin: 4px; }
+
+.ns-margin-sm {
+  margin: 8px; }
+
+.ns-margin-md {
+  margin: 16px; }
+
+.ns-margin-lg {
+  margin: 32px; }
+
+.ns-margin-xl {
+  margin: 64px; }
+
+.ns-margin-xxl {
+  margin: 96px; }
+
+/* Margin-top
+----------------------------------------------------------------------------- */
+.ns-margin-top-xs {
+  margin-top: 4px; }
+
+.ns-margin-top-sm {
+  margin-top: 8px; }
+
+.ns-margin-top-md {
+  margin-top: 16px; }
+
+.ns-margin-top-lg {
+  margin-top: 32px; }
+
+.ns-margin-top-xl {
+  margin-top: 64px; }
+
+.ns-margin-top-xxl {
+  margin-top: 96px; }
+
+/* Margin-right
+----------------------------------------------------------------------------- */
+.ns-margin-right-xs {
+  margin-right: 4px; }
+
+.ns-margin-right-sm {
+  margin-right: 8px; }
+
+.ns-margin-right-md {
+  margin-right: 16px; }
+
+.ns-margin-right-lg {
+  margin-right: 32px; }
+
+.ns-margin-right-xl {
+  margin-right: 64px; }
+
+.ns-margin-right-xxl {
+  margin-right: 96px; }
+
+/* Margin-bottom
+----------------------------------------------------------------------------- */
+.ns-margin-bottom-xs {
+  margin-bottom: 4px; }
+
+.ns-margin-bottom-sm {
+  margin-bottom: 8px; }
+
+.ns-margin-bottom-md {
+  margin-bottom: 16px; }
+
+.ns-margin-bottom-lg {
+  margin-bottom: 32px; }
+
+.ns-margin-bottom-xl {
+  margin-bottom: 64px; }
+
+.ns-margin-bottom-xxl {
+  margin-bottom: 96px; }
+
+/* Margin-left
+----------------------------------------------------------------------------- */
+.ns-margin-left-xs {
+  margin-left: 4px; }
+
+.ns-margin-left-sm {
+  margin-left: 8px; }
+
+.ns-margin-left-md {
+  margin-left: 16px; }
+
+.ns-margin-left-lg {
+  margin-left: 32px; }
+
+.ns-margin-left-xl {
+  margin-left: 64px; }
+
+.ns-margin-left-xxl {
+  margin-left: 96px; }
+
+/* -----------------------------------------------------------------------------
+	*Wednesday 19 Dec 2018 - Time: 09:57*
+	Layout
+----------------------------------------------------------------------------- */
+.ns-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 16px;
+  width: 100%; }
+
+.ns-viewport-vertical {
+  height: 100vh;
+  overflow: hidden;
+  position: relative; }
+
+.ns-horizontal-scroll {
+  overflow-x: auto;
+  overflow-y: hidden; }
+
+.ns-vertical-scroll {
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.ns-no-scroll {
+  overflow: hidden; }
+
+.ns-clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.ns-screen-reader-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px; }
+
+/* -----------------------------------------------------------------------------
+	*Wednesday 19 Dec 2018 - Time: 10:21*
+	Background
+----------------------------------------------------------------------------- */
+.ns-bg-light {
+  background-color: #d8d8d8; }
+
+.ns-bg-lighter {
+  background-color: #f3f3f3; }
+
+.ns-bg-primary {
+  background-color: #08436a; }
+
+.ns-bg-success {
+  background-color: #32b400; }
+
+.ns-bg-warning {
+  background-color: #f9b01e; }
+
+.ns-bg-danger {
+  background-color: #da291c; }
+
+.ns-bg-white {
+  background-color: white; }
+
+.ns-bg-black {
+  background-color: black; }
+
+/* -----------------------------------------------------------------------------
+  *Tuesday 18 Dec 2018 - Time: 14:38*
+	Badge
+----------------------------------------------------------------------------- */
+.badge, .ns-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  line-height: 18px;
+  line-height: 1.11238rem;
+  font-weight: 700;
+  min-height: 8px;
+  padding: 2px 8px;
+  background-color: #d8d8d8;
+  color: black;
+  border-radius: 8px; }
+
+/* Badge colors
+----------------------------------------------------------------------------- */
+.ns-badge.ns-badge--primary {
+  color: white;
+  background-color: #08436a; }
+
+.ns-badge.ns-badge--secondary {
+  color: white;
+  background-color: #08436a; }
+
+.ns-badge.ns-badge--success {
+  color: white;
+  background-color: #32b400; }
+
+.ns-badge.ns-badge--info {
+  color: white;
+  background-color: #0064b4; }
+
+.ns-badge.ns-badge--warning {
+  color: white;
+  background-color: #f9b01e; }
+
+.ns-badge.ns-badge--danger {
+  color: white;
+  background-color: #da291c; }
+
+.ns-badge.ns-badge--black {
+  color: white;
+  background-color: black; }
+
+.ns-badge.ns-badge--white {
+  color: #454545;
+  background-color: white; }
+
+.ns-badge.ns-badge--lgrey {
+  color: #d8d8d8;
+  background-color: #f3f3f3; }
+
+/* -----------------------------------------------------------------------------
+	*Sunday 23 Dec 2018 - Time: 13:47*
+	List
+----------------------------------------------------------------------------- */
+/* List
+----------------------------------------------------------------------------- */
+ul, ol, dl {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.618rem; }
+
+/* Standard list
+----------------------------------------------------------------------------- */
+.list, .ns-list, .ns-ordered-list {
+  padding-left: 32px;
+  margin: 16px 0 0 0; }
+
+.ns-list > li {
+  padding: 4px;
+  list-style: none; }
+  .ns-list > li::before {
+    content: '\f324';
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    font-size: 11px;
+    color: #08436a;
+    display: inline-block;
+    margin-left: -20px;
+    width: 16px; }
+
+.ns-list > li:last-of-type {
+  margin-bottom: 8px; }
+
+.ns-ordered-list {
+  list-style-type: none;
+  counter-reset: li; }
+  .ns-ordered-list > li {
+    padding: 4px;
+    counter-increment: li; }
+    .ns-ordered-list > li::before {
+      content: counter(li) ".";
+      color: #08436a;
+      display: inline-block;
+      margin-left: -20px;
+      width: 16px; }
+
+.l-wrap {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0;
+  height: 100vh; }
+  @media screen and (min-width: 600px) {
+    .l-wrap {
+      -ms-grid-columns: auto;
+      grid-template-columns: auto;
+      -ms-grid-rows: 80px auto;
+      grid-template-rows: 80px auto; } }
+  @media screen and (min-width: 1200px) {
+    .l-wrap {
+      -ms-grid-columns: 255px auto;
+      grid-template-columns: 255px auto;
+      -ms-grid-rows: auto;
+      grid-template-rows: auto; } }
+  @media screen and (min-width: 1800px) {
+    .l-wrap {
+      -ms-grid-columns: 255px auto;
+      grid-template-columns: 255px auto;
+      -ms-grid-rows: auto;
+      grid-template-rows: auto; } }
+
+main {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+  -ms-grid-rows: 60px 60px auto;
+  grid-template-rows: 60px 60px auto; }
+
+aside {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+  -ms-grid-rows: 120px auto;
+  grid-template-rows: 120px auto;
+  background-color: #031826;
+  z-index: 50; }
+
+header {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0;
+  -ms-grid-columns: auto 22% 15%;
+  grid-template-columns: auto 22% 15%;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  background-color: #fdfdfe;
+  border-bottom: 1px solid #e6ecf0;
+  z-index: 40; }
+
+.s-account {
+  background-color: #e6ecf0; }
+
+.s-links {
+  background-color: #ced9e1; }
+
+.s-logo {
+  padding: 32px 0 0 0;
+  -ms-grid-column-align: center;
+  justify-self: center; }
+  .s-logo img {
+    max-width: 200px; }
+
+.s-toolbar {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  background-color: #fdfdfe;
+  border-bottom: 1px solid #e6ecf0;
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(8, 67, 106, 0.05);
+  box-shadow: 0px 10px 30px 0px rgba(8, 67, 106, 0.05);
+  z-index: 30; }
+
+.s-breadcrumb {
+  background-color: #c1d0da; }
+
+.s-actions {
+  background-color: #dae3e9; }
+
+.s-content {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  background-color: #f3f6f8; }
+
+.l-container {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  margin: 32px 0 0 0;
+  width: 1200px; }

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+// * STYLE
+// ----------------------------------------------------------------------------- */
+
+// Quarks
+@import "ns.style.quarks/_quarks.variables.scss";
+@import "ns.style.quarks/_quarks.functions.scss";
+@import "ns.style.quarks/_quarks.mixins.scss";
+@import "ns.style.quarks/_quarks.colors.scss";
+
+// Base
+@import "ns.style.base/_base.fonts.scss";
+@import "ns.style.base/_base.typography.scss";
+@import "ns.style.base/_base.layout.scss";
+@import "ns.style.base/_base.media.scss";
+
+// Utilities
+@import "ns.style.utilities/_utilities.text.scss";
+@import "ns.style.utilities/_utilities.spacing.scss";
+@import "ns.style.utilities/_utilities.layout.scss";
+@import "ns.style.utilities/_utilities.background.scss";
+
+// Atoms
+@import "ns.style.atoms/_atoms.badge.scss";
+@import "ns.style.atoms/_atoms.list.scss";
+
+// * ERP
+// ----------------------------------------------------------------------------- */
+
+// Structure
+@import "ns.erp.structure/_structure.global.scss";
+@import "ns.erp.structure/_structure.main.scss";
+@import "ns.erp.structure/_structure.aside.scss";
+@import "ns.erp.structure/_structure.header.scss";
+
+// Sections
+@import "ns.erp.sections/_sections.logo.scss";
+@import "ns.erp.sections/_sections.nav.scss";
+@import "ns.erp.sections/_sections.toolbar.scss";
+@import "ns.erp.sections/_sections.content.scss";

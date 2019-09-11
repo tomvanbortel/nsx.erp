@@ -1,0 +1,54 @@
+// * -----------------------------------------------------------------------------
+// 10 Sep 2019 at 09:34:36
+// Colors
+// ----------------------------------------------------------------------------- */
+
+// * Theme analogue colors
+// ----------------------------------------------------------------------------- */
+$primary: rgb(8,67,106);
+$primary-light: tint($primary, 64%);
+$primary-lighter: tint($primary, 32%);
+$primary-dark: shade($primary, 32%);
+$primary-darker: shade($primary, 64%);
+
+$secondary: rgb(124,0,51);
+$secondary-light: tint($secondary, 64%);
+$secondary-lighter: tint($secondary, 32%);
+$secondary-dark: shade($secondary, 32%);
+$secondary-darker: shade($secondary, 64%);
+
+$accent-color: rgb(0,104,255);
+$accent-light: tint($accent-color, 64%);
+$accent-lighter: tint($accent-color, 32%);
+$accent-dark: shade($accent-color, 64%);
+$accent-darker: shade($accent-color, 32%);
+
+// * Black, White and Greys
+// ----------------------------------------------------------------------------- */
+$black: rgb(0,0,0);
+$white: rgb(255,255,255);
+
+$grey-dark: rgb(69, 69, 69);
+$grey-darker: rgb(46, 46, 46);
+$grey: rgb(176, 176, 176);
+$grey-light: rgb(216, 216, 216);
+$grey-lighter: rgb(243, 243, 243);
+
+// * Notification colors
+// ----------------------------------------------------------------------------- */
+$apple: rgb(50, 180, 00);
+$alzarin-crimson: rgb(218, 41, 28);
+$sun: rgb(249, 176, 30);
+$endeavour: rgb(0, 100, 180);
+
+// * Define
+// ----------------------------------------------------------------------------- */
+$state-success: $apple;
+$state-info: $endeavour;
+$state-warning: $sun;
+$state-danger: $alzarin-crimson;
+$state-disabled: $grey-light;
+
+$overlay-color: rgba($black, .75);
+
+$text-color: $black;

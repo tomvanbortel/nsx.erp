@@ -1,0 +1,65 @@
+/* -----------------------------------------------------------------------------
+	*Sunday 23 Dec 2018 - Time: 13:47*
+	List
+----------------------------------------------------------------------------- */
+
+/* List
+----------------------------------------------------------------------------- */
+ul, ol, dl {
+	@include font-size($font-size-body);
+}
+
+/* Standard list
+----------------------------------------------------------------------------- */
+.list {
+	padding-left: $spacer-lg;
+	margin: $spacer-stack-md;
+}
+
+.ns-list {
+	@extend .list;
+
+	> li {
+		padding: $spacer-xs;
+		list-style: none;
+
+		&::before {
+			content: '\f324';
+			
+			font-family: "Font Awesome 5 Pro";
+			font-weight: 400;
+			font-size: $font-size-caption + px;
+
+			color: $primary;
+
+			display: inline-block;
+			margin-left: -20px;
+			width: $spacer-md;
+		}
+	}
+
+	> li:last-of-type {
+		margin-bottom: $spacer-sm;
+	}
+}
+
+.ns-ordered-list {
+	@extend .list;
+
+	list-style-type: none;
+	counter-reset: li;
+
+	> li {
+		padding: $spacer-xs;
+		counter-increment: li;
+
+		&::before {
+			content: counter(li) ".";
+			color: $primary;
+
+			display: inline-block;
+			margin-left: -20px;
+			width: $spacer-md;
+		}
+	}
+}

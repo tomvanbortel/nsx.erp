@@ -1,0 +1,26 @@
+// * -----------------------------------------------------------------------------
+// 5 Sep 2019 at 10:33:53
+// Global
+// ----------------------------------------------------------------------------- */
+
+.l-wrap {
+  display : grid;
+  grid-gap: 0;
+
+  height: 100vh;
+
+  @include for-tablet-portrait-up {
+    grid-template-columns: auto;
+    grid-template-rows   : 80px auto;
+  }
+
+  @include for-desktop-up {
+    grid-template-columns: 255px auto;
+    grid-template-rows   : auto;
+  }
+
+  @include for-big-desktop-up {
+    grid-template-columns: 255px auto;
+    grid-template-rows   : auto;
+  }
+}

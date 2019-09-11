@@ -1,0 +1,102 @@
+// * -----------------------------------------------------------------------------
+// *Saturday 01 Dec 2018 - Time: 09:15*
+// Variables
+// ----------------------------------------------------------------------------- */
+
+$baseline: 8;
+$basefont: 16;
+
+// * Screensize
+// ----------------------------------------------------------------------------- */
+$phone-size: 599px;
+$tablet-size-portrait: 600px;
+$tablet-size-landscape: 900px;
+$desktop: 1200px;
+$desktop-big: 1800px;
+
+// * Spacer
+// https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
+// ----------------------------------------------------------------------------- */
+$spacer-xs: 4px;
+$spacer-sm: 8px;
+$spacer-md: 16px;
+$spacer-lg: 32px;
+$spacer-xl: 64px;
+$spacer-xxl: 96px;
+
+// * Padding
+// ----------------------------------------------------------------------------- */
+$spacer-inset-xs: 4px 4px 4px 4px;
+$spacer-inset-sm: 8px 8px 8px 8px;
+$spacer-inset-md: 16px 16px 16px 16px;
+$spacer-inset-lg: 32px 32px 32px 32px;
+$spacer-inset-xl: 64px 64px 64px 64px;
+$spacer-inset-xxl: 96px 96px 96px 96px;
+
+// * Margin
+// ----------------------------------------------------------------------------- */
+$spacer-stack-xs: 4px 0 0 0;
+$spacer-stack-sm: 8px 0 0 0;
+$spacer-stack-md: 16px 0 0 0;
+$spacer-stack-lg: 32px 0 0 0;
+$spacer-stack-xl: 64px 0 0 0;
+$spacer-stack-xxl: 96px 0 0 0;
+
+// * Font Families
+// ----------------------------------------------------------------------------- */
+$font-family-base: 'Open sans';
+$font-family-headings: 'Maven pro';
+$font-family-monospace: 'Source code pro', monospace;
+
+// * Font Sizes
+// ----------------------------------------------------------------------------- */
+$golden-ratio: 1.618;
+
+$font-size-uber: 83;
+$font-size-hero: 69;
+
+$font-size-h1: 48;
+$font-size-h2: 40;
+$font-size-h3: 33;
+$font-size-h4: 28;
+$font-size-h5: 23;
+
+$font-size-lead: 19;
+$font-size-body: 16;
+$font-size-small: 13;
+$font-size-caption: 11;
+$font-size-tiny: 9;
+
+// * Font Weights
+// ----------------------------------------------------------------------------- */
+$normal: 400;
+$bold: 700;
+
+// * Readable
+// ----------------------------------------------------------------------------- */
+$readable: 45rem;
+
+// * Animation
+// ----------------------------------------------------------------------------- */
+$animation-duration: 300ms;
+$animation-easing: ease;
+
+$animation-ease: $animation-duration $animation-easing;
+
+// * Radius
+// ----------------------------------------------------------------------------- */
+$default-radius: 8px;
+
+// * Z-index
+// ----------------------------------------------------------------------------- */
+$z-index: (
+	modal: 110,
+	overlay: 100,
+	statusbar: 90,
+	tooltip: 80,
+	flyout: 70,
+	datepicker: 60,
+	aside: 50,
+	header: 40,
+	toolbar: 30
+);

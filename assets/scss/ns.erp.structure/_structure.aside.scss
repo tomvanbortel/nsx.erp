@@ -1,0 +1,15 @@
+// * -----------------------------------------------------------------------------
+// 5 Sep 2019 at 10:30:56
+// Aside
+// ----------------------------------------------------------------------------- */
+
+aside {
+display              : grid;
+grid-gap             : 0;
+
+grid-template-columns: auto;
+grid-template-rows   : 120px auto;
+
+background-color     : $primary-darker;
+@include layer(aside);
+}

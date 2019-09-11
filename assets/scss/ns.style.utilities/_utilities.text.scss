@@ -1,0 +1,94 @@
+/* -----------------------------------------------------------------------------
+	*Wednesday 19 Dec 2018 - Time: 07:50*
+	Utilities Text
+----------------------------------------------------------------------------- */
+
+/* Text Style 
+----------------------------------------------------------------------------- */
+.ns-text-bold {
+	font-weight: $bold;
+}
+
+.ns-text-italic {
+	font-style: italic;
+}
+
+.ns-text-underline {
+	text-decoration: underline;
+}
+
+/* Text alignment
+----------------------------------------------------------------------------- */
+.ns-text-left {
+	text-align: left;
+}
+
+.ns-text-right {
+	text-align: right;
+}
+
+.ns-text-center {
+	text-align: center;
+}
+
+.ns-text-justify {
+	text-align: justify;
+}
+
+/* Text transform
+----------------------------------------------------------------------------- */
+.ns-text-lowercase {
+	text-transform: lowercase;
+}
+
+.ns-text-uppercase {
+	text-transform: uppercase;
+}
+
+.ns-text-capitalize {
+	text-transform: capitalize;
+}
+
+/* Text color
+----------------------------------------------------------------------------- */
+.ns-text-primary {
+	color: $primary;
+}
+
+.ns-text-succes {
+	color: $state-success;
+}
+
+.ns-text-warning {
+	color: $state-warning;
+}
+
+.ns-text-danger {
+	color: $state-danger;
+}
+
+.ns-text-light {
+	color: $grey-light;
+}
+
+.ns-text-xlight {
+	color: $grey-lighter;
+}
+
+/* Overflow
+----------------------------------------------------------------------------- */
+%u-text-truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.ns-text-truncate {
+	@extend %u-text-truncate;
+}
+
+/* Text accessibility
+----------------------------------------------------------------------------- */
+.ns-text-readable {
+	max-width: $readable;
+}

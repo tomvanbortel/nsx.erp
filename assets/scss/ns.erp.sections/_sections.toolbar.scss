@@ -1,0 +1,27 @@
+// * -----------------------------------------------------------------------------
+// 9 Sep 2019 at 11:07:09
+// Toolbar
+// ----------------------------------------------------------------------------- */
+
+.s-toolbar {
+  display: grid;
+  grid-gap: 0;
+
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+
+  background-color: tint($primary, 99%);
+  border-bottom: 1px solid tint($primary, 90%);
+
+  box-shadow: 0px 10px 30px 0px rgba($primary, 0.05);
+
+  @include layer(toolbar);
+}
+
+.s-breadcrumb {
+  background-color: tint($primary, 75%);
+}
+
+.s-actions {
+  background-color: tint($primary, 85%);
+}

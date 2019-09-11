@@ -1,0 +1,201 @@
+/* -----------------------------------------------------------------------------
+  *Thursday 06 Dec 2018 - Time: 08:26* 
+	Typography
+----------------------------------------------------------------------------- */
+
+/* Body
+----------------------------------------------------------------------------- */
+body {
+	margin: 0;
+
+	color: $grey-dark;
+	font-family: $font-family-base;
+
+	@include font-size($font-size-body);
+
+	&.dark {
+		color: $grey-lighter;
+		background-color: $grey-dark;
+	}
+}
+
+/* Headers
+----------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5,
+.font-size-uber, .font-size-hero {
+	color: $grey-darker;
+	font-family: $font-family-headings;
+	font-weight: $normal;
+
+	margin: $spacer-sm 0 0 0;
+}
+
+.font-size-uber {
+	@include font-size($font-size-uber);
+}
+
+.font-size-hero {
+	@include font-size($font-size-hero);
+}
+
+h1, .h1 {
+	@include font-size($font-size-h1);
+}
+
+h2, .h2 {
+	@include font-size($font-size-h2);
+}
+
+h3, .h3 {
+	@include font-size($font-size-h3);
+}
+
+h4, .h4 {
+	@include font-size($font-size-h4);
+}
+
+h5, .h5 {
+	@include font-size($font-size-h5);
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5,
+.dark .h1, .dark .h2, .dark .h3, .dark .h4, .dark .h5,
+.dark .font-size-uber, .dark .font-size-hero {
+	color: $grey-light;
+}
+
+/* Types
+----------------------------------------------------------------------------- */
+.font-size-lead, .font-size-small, .font-size-caption, .font-size-tiny {
+	color: $grey-dark;
+	font-family: $font-family-base;
+
+	margin: $spacer-stack-md;
+}
+
+.font-size-lead {
+	@include font-size($font-size-lead);
+}
+
+.font-size-small {
+	@include font-size($font-size-small);
+}
+
+.font-size-caption {
+	@include font-size($font-size-caption);
+}
+
+.font-size-tiny {
+	@include font-size($font-size-tiny);
+}
+
+.dark .font-size-lead, .dark .font-size-small, .dark .font-size-caption, .dark .font-size-tiny {
+	color: $grey-light;
+}
+
+/* Paragraps
+----------------------------------------------------------------------------- */
+p {
+	@include font-size($font-size-body);
+	margin: $spacer-stack-md;
+}
+
+// p + p {
+//   text-indent: $spacer-md;
+//   margin: 0;
+// }
+
+/* Blockquote
+----------------------------------------------------------------------------- */
+blockquote {
+	border-left: 1px solid $primary;
+	margin: $spacer-stack-md;
+	padding: $spacer-xs 0 $spacer-xs $spacer-md;
+
+	cite {
+		color: $grey;
+		display: block;
+
+		@include font-size($font-size-small);
+
+		&:before {
+			content: '- ';
+		}
+	}
+}
+
+/* Figcaption
+----------------------------------------------------------------------------- */
+figcaption {
+	color: $grey;
+	@include font-size($font-size-caption);
+
+	padding: $spacer-xs;
+}
+
+/* Small
+----------------------------------------------------------------------------- */
+small, .small {
+	color: $grey;
+	@include font-size($font-size-small);
+}
+
+/* Mark
+----------------------------------------------------------------------------- */
+mark {
+	background-color: $grey-lighter;
+	color: $primary;
+
+	padding: 0 $spacer-sm;
+}
+
+/* Horizontal Rules
+----------------------------------------------------------------------------- */
+hr {
+	border: none;
+	border-top: 1px solid $grey-light;
+	height: 1px;
+	margin: $spacer-md 0;
+}
+
+/* Links
+----------------------------------------------------------------------------- */
+a {
+	color: rgba($primary, 0.72);
+	text-decoration: none;
+	padding: 0 0 4px 0;
+	border-bottom: 1px dotted rgba($primary, 0.16);
+
+	transition: color $animation-ease, border-color $animation-ease;
+
+	&:hover,
+  &:active,
+  &:focus {
+    color: $primary;
+    border-color: rgba($primary, 0.64);
+  }
+
+  &:focus {
+  	outline: none;
+  }
+}
+
+.dark a {
+	color: rgba($grey-light, 0.72);
+	border-bottom: 1px dotted rgba($grey-light, 0.40);
+
+	&:hover,
+  &:active,
+  &:focus {
+    color: $white;
+    border-color: rgba($grey-light, 1);
+  }
+}
+
+/* Selection
+----------------------------------------------------------------------------- */
+::selection {
+	background-color: tint($primary, 80%);
+	color: $primary-dark;
+}

@@ -1,0 +1,69 @@
+/* -----------------------------------------------------------------------------
+  *Tuesday 18 Dec 2018 - Time: 14:38*
+	Badge
+----------------------------------------------------------------------------- */
+.badge {
+	display: inline-block;
+
+	@include font-size($font-size-caption);
+	font-weight: $bold;
+
+	min-height: $spacer-sm;
+	padding: $spacer-md / 8 $spacer-md / 2;
+
+	background-color: $grey-light;
+	color: $text-color;
+
+	border-radius: $default-radius;
+}
+
+/* Badge colors
+----------------------------------------------------------------------------- */
+.ns-badge {
+	@extend .badge;
+
+	&.ns-badge--primary {
+		color: $white;
+		background-color: $primary;
+	}
+
+	&.ns-badge--secondary {
+		color: $white;
+		background-color: $primary;
+	}
+
+	&.ns-badge--success {
+		color: $white;
+		background-color: $state-success;
+	}
+
+	&.ns-badge--info {
+		color: $white;
+		background-color: $state-info;
+	}
+
+	&.ns-badge--warning {
+		color: $white;
+		background-color: $state-warning;
+	}
+
+	&.ns-badge--danger {
+		color: $white;
+		background-color: $state-danger;
+	}
+
+	&.ns-badge--black {
+		color: $white;
+		background-color: $black;
+	}
+
+	&.ns-badge--white {
+		color: $grey-dark;
+		background-color: $white;
+	}
+
+	&.ns-badge--lgrey {
+		color: $grey-light;
+		background-color: $grey-lighter;
+	}
+}

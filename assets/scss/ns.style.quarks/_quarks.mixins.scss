@@ -1,0 +1,83 @@
+/* -----------------------------------------------------------------------------
+    Mixins
+----------------------------------------------------------------------------- */
+
+/* Tint 
+----------------------------------------------------------------------------- */
+@function tint($color,$percent) {
+  @if not _is-color($color) {
+    @error "`#{$color}` is not a valid color for the `$color` argument in " +
+           "the `tint` mixin.";
+  } @else {
+    @return mix(#fff, $color, $percent);
+  }
+}
+
+/* Shade
+----------------------------------------------------------------------------- */
+@function shade($color, $percent) {
+  @if not _is-color($color) {
+    @error "`#{$color}` is not a valid color for the `$color` argument in " +
+           "the `shade` mixin.";
+  } @else {
+    @return mix(#000, $color, $percent);
+  }
+}
+
+/* Defined Media Queries
+// https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+----------------------------------------------------------------------------- */
+@mixin for-phone-only {
+  @media screen and (max-width: $phone-size) { @content; }
+}
+
+@mixin for-tablet-portrait-up {
+  @media screen and (min-width: $tablet-size-portrait) { @content; }
+}
+
+@mixin for-tablet-landscape-up {
+  @media screen and (min-width: $tablet-size-landscape) { @content; }
+}
+
+@mixin for-desktop-up {
+  @media screen and (min-width: $desktop) { @content; }
+}
+
+@mixin for-big-desktop-up {
+  @media screen and (min-width: $desktop-big) { @content; }
+}
+
+/* Undefined Media Queries
+----------------------------------------------------------------------------- */
+@mixin at($_min-width) {
+  @media screen and (min-width: $_min-width) { @content; }
+}
+
+@mixin to($_max-width) { 
+  @media screen and (max-width: $_max-width) { @content; }
+}
+
+/* Font-sizes
+----------------------------------------------------------------------------- */
+@mixin font-size($_font-size) {
+  font-size: #{$_font-size + 'px'};
+  font-size: #{($_font-size / $basefont) + 'rem'};
+  line-height: #{round($_font-size * $golden-ratio) + 'px'};
+  line-height: #{($_font-size * $golden-ratio) / $basefont + 'rem'};
+}
+
+/* Z-index
+----------------------------------------------------------------------------- */
+@mixin layer($key) {
+  z-index: z-index($key);
+}
+
+/* Clearfix
+----------------------------------------------------------------------------- */
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}

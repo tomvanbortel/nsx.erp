@@ -1,0 +1,57 @@
+  /* -----------------------------------------------------------------------------
+	*Wednesday 19 Dec 2018 - Time: 09:57*
+	Layout
+----------------------------------------------------------------------------- */
+
+// * Containers
+// ----------------------------------------------------------------------------- */
+.ns-container {
+	margin: 0 auto;
+	max-width: $desktop;
+	padding: 0 $spacer-md;
+	width: 100%;
+}
+
+// * Viewport
+// ----------------------------------------------------------------------------- */
+.ns-viewport-vertical {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+// * Scroll
+// ----------------------------------------------------------------------------- */
+.ns-horizontal-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.ns-vertical-scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.ns-no-scroll {
+  overflow: hidden;
+}
+
+// * Clearfix
+// ----------------------------------------------------------------------------- */
+.ns-clearfix {
+	@include clearfix;
+}
+
+// * Accessibility
+// ----------------------------------------------------------------------------- */
+%u-screen-reader-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+}
+
+.ns-screen-reader-only {
+  @extend %u-screen-reader-only;
+}
