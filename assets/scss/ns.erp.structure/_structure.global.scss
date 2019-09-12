@@ -11,7 +11,7 @@
 
   @include for-tablet-portrait-up {
     grid-template-columns: auto;
-    grid-template-rows   : 80px auto;
+    grid-template-rows   : 50px auto;
   }
 
   @include for-desktop-up {

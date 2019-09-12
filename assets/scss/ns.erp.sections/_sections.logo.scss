@@ -4,10 +4,29 @@
 // ----------------------------------------------------------------------------- */
 
 .s-logo {
-  padding: $spacer-stack-lg;
-  justify-self: center;
+
+  @include for-tablet-portrait-up {
+    padding: $spacer-stack-sm;
+    justify-self: start;
+  }
+
+  @include for-desktop-up {
+    padding: $spacer-stack-lg;
+    justify-self: center;
+  }
+
+  @include for-big-desktop-up {
+    padding: $spacer-stack-lg;
+    justify-self: center;
+  }
+
+  // * ===========================================
 
   & img {
     max-width: 200px;
+
+    @include for-tablet-portrait-up {
+      max-height: 30px;
+    }
   }
 }

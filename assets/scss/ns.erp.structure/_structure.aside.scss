@@ -4,12 +4,26 @@
 // ----------------------------------------------------------------------------- */
 
 aside {
-display              : grid;
-grid-gap             : 0;
+  display              : grid;
+  grid-gap             : 0;
 
-grid-template-columns: auto;
-grid-template-rows   : 120px auto;
+  @include for-tablet-portrait-up {
+    grid-template-columns: 200px auto;
+    grid-template-rows   : 50px;
+  }
 
-background-color     : $primary-darker;
-@include layer(aside);
+  @include for-desktop-up {
+    grid-template-columns: auto;
+    grid-template-rows   : 120px auto;
+  }
+
+  @include for-big-desktop-up {
+    grid-template-columns: auto;
+    grid-template-rows   : 120px auto;
+  }
+
+  // * ===========================================
+
+  background-color     : $primary-darker;
+  @include layer(aside);
 }

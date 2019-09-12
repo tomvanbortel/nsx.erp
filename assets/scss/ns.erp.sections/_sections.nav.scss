@@ -3,5 +3,14 @@
 // Navigation
 // ----------------------------------------------------------------------------- */
 .s-navigation {
+  display: grid;
+  grid-gap: 0;
+
   background-color: shade($primary, 45%);
+}
+
+nav {
+  padding: $spacer-inset-md;
+
+  color: $white;
 }
