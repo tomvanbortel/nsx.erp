@@ -6,8 +6,6 @@
 .s-content {
   display: grid;
   width: 100%;
-
-  background-color: tint($primary, 95%);
 }
 
 .l-container {
@@ -15,5 +13,20 @@
 
   margin: $spacer-stack-lg;
 
-  width: $desktop;
+  @include for-phone-only {
+    width: 93%;
+  }
+
+  @include for-tablet-portrait-up {
+    width: 94%;
+  }
+
+  @include for-desktop-up {
+    width: $desktop;
+  }
+
+  @include for-big-desktop-up {
+    width: $desktop;
+  }
+
 }

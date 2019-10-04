@@ -14,8 +14,10 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  display: grid;
+  min-height      : 100vh;
+  display         : grid;
+
+  background-color: tint($primary, 95%);
 }
 
 .l-wrap {

@@ -640,7 +640,8 @@ html {
 body {
   min-height: 100vh;
   display: -ms-grid;
-  display: grid; }
+  display: grid;
+  background-color: #f3f6f8; }
 
 .l-wrap {
   display: -ms-grid;
@@ -674,11 +675,25 @@ body {
 main {
   display: -ms-grid;
   display: grid;
-  grid-gap: 0;
-  -ms-grid-columns: auto;
-  grid-template-columns: auto;
-  -ms-grid-rows: 60px 60px auto;
-  grid-template-rows: 60px 60px auto; }
+  grid-gap: 0; }
+  @media screen and (max-width: 599px) {
+    main {
+      -ms-grid-columns: auto;
+      grid-template-columns: auto;
+      -ms-grid-rows: 0 120px auto;
+      grid-template-rows: 0 120px auto; } }
+  @media screen and (min-width: 600px) {
+    main {
+      -ms-grid-columns: auto;
+      grid-template-columns: auto;
+      -ms-grid-rows: 0 120px auto;
+      grid-template-rows: 0 120px auto; } }
+  @media screen and (min-width: 1200px) {
+    main {
+      -ms-grid-columns: auto;
+      grid-template-columns: auto;
+      -ms-grid-rows: 60px 60px auto;
+      grid-template-rows: 60px 60px auto; } }
 
 aside {
   display: -ms-grid;
@@ -715,19 +730,52 @@ header {
   display: -ms-grid;
   display: grid;
   grid-gap: 0;
-  -ms-grid-columns: auto 22% 15%;
-  grid-template-columns: auto 22% 15%;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
   background-color: #fdfdfe;
   border-bottom: 1px solid #e6ecf0;
   z-index: 40; }
+  @media screen and (max-width: 599px) {
+    header {
+      -ms-grid-columns: auto 50%;
+      grid-template-columns: auto 50%;
+      -ms-grid-rows: auto;
+      grid-template-rows: auto; } }
+  @media screen and (min-width: 600px) {
+    header {
+      -ms-grid-columns: auto 50%;
+      grid-template-columns: auto 50%;
+      -ms-grid-rows: auto;
+      grid-template-rows: auto; } }
+  @media screen and (min-width: 1200px) {
+    header {
+      -ms-grid-columns: auto 15%;
+      grid-template-columns: auto 15%;
+      -ms-grid-rows: auto;
+      grid-template-rows: auto; } }
 
 .s-account {
-  background-color: #e6ecf0; }
+  background-color: #e6ecf0;
+  visibility: visible; }
+  @media screen and (min-width: 600px) {
+    .s-account {
+      visibility: hidden; } }
+  @media screen and (max-width: 599px) {
+    .s-account {
+      visibility: hidden; } }
+  @media screen and (min-width: 1200px) {
+    .s-account {
+      visibility: visible; } }
 
 .s-links {
   background-color: #ced9e1; }
+  @media screen and (min-width: 600px) {
+    .s-links {
+      visibility: hidden; } }
+  @media screen and (max-width: 599px) {
+    .s-links {
+      visibility: hidden; } }
+  @media screen and (min-width: 1200px) {
+    .s-links {
+      visibility: visible; } }
 
 @media screen and (max-width: 599px) {
   .s-logo {
@@ -788,15 +836,29 @@ nav {
   display: -ms-grid;
   display: grid;
   grid-gap: 0;
-  -ms-grid-columns: (auto)[2];
-  grid-template-columns: repeat(2, auto);
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
   background-color: #fdfdfe;
   border-bottom: 1px solid #e6ecf0;
   -webkit-box-shadow: 0px 10px 30px 0px rgba(8, 67, 106, 0.05);
   box-shadow: 0px 10px 30px 0px rgba(8, 67, 106, 0.05);
   z-index: 30; }
+  @media screen and (max-width: 599px) {
+    .s-toolbar {
+      -ms-grid-columns: auto;
+      grid-template-columns: auto;
+      -ms-grid-rows: (60px)[2];
+      grid-template-rows: repeat(2, 60px); } }
+  @media screen and (min-width: 600px) {
+    .s-toolbar {
+      -ms-grid-columns: auto;
+      grid-template-columns: auto;
+      -ms-grid-rows: (60px)[2];
+      grid-template-rows: repeat(2, 60px); } }
+  @media screen and (min-width: 1200px) {
+    .s-toolbar {
+      -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+      -ms-grid-rows: auto;
+      grid-template-rows: auto; } }
 
 .s-breadcrumb {
   background-color: #c1d0da; }
@@ -807,11 +869,21 @@ nav {
 .s-content {
   display: -ms-grid;
   display: grid;
-  width: 100%;
-  background-color: #f3f6f8; }
+  width: 100%; }
 
 .l-container {
   -ms-grid-column-align: center;
   justify-self: center;
-  margin: 32px 0 0 0;
-  width: 1200px; }
+  margin: 32px 0 0 0; }
+  @media screen and (max-width: 599px) {
+    .l-container {
+      width: 93%; } }
+  @media screen and (min-width: 600px) {
+    .l-container {
+      width: 94%; } }
+  @media screen and (min-width: 1200px) {
+    .l-container {
+      width: 1200px; } }
+  @media screen and (min-width: 1800px) {
+    .l-container {
+      width: 1200px; } }

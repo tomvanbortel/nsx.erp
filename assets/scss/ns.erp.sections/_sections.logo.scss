@@ -6,22 +6,22 @@
 .s-logo {
 
   @include for-phone-only {
-    padding: $spacer-stack-sm;
+    padding     : $spacer-stack-sm;
     justify-self: start;
   }
 
   @include for-tablet-portrait-up {
-    padding: $spacer-stack-sm;
+    padding     : $spacer-stack-sm;
     justify-self: start;
   }
 
   @include for-desktop-up {
-    padding: $spacer-stack-lg;
+    padding     : $spacer-stack-lg;
     justify-self: center;
   }
 
   @include for-big-desktop-up {
-    padding: $spacer-stack-lg;
+    padding     : $spacer-stack-lg;
     justify-self: center;
   }
 
@@ -32,24 +32,24 @@
 
     @include for-phone-only {
       padding-left: $spacer-md;
-      max-height: 30px;
+      max-height  : 30px;
     }
 
     @include for-tablet-portrait-up {
       padding-left: $spacer-md;
-      max-height: 30px;
+      max-height  : 30px;
     }
 
     @include for-desktop-up {
       justify-self: center;
 
-      max-height: 55px;
+      max-height  : 55px;
     }
 
     @include for-big-desktop-up {
       justify-self: center;
 
-      max-height: 55px;
+      max-height  : 55px;
     }
   }
 }

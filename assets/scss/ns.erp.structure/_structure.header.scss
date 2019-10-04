@@ -7,19 +7,56 @@ header {
   display: grid;
   grid-gap: 0;
 
-  grid-template-columns: auto 22% 15%;
-  grid-template-rows: auto;
-
   background-color: tint($primary, 99%);
   border-bottom: 1px solid tint($primary, 90%);
 
   @include layer(header);
+
+  @include for-phone-only {
+    grid-template-columns: auto 50%;
+    grid-template-rows: auto;
+  }
+
+  @include for-tablet-portrait-up {
+    grid-template-columns: auto 50%;
+    grid-template-rows: auto;
+  }
+
+  @include for-desktop-up {
+    grid-template-columns: auto 15%;
+    grid-template-rows: auto;
+  }
 }
 
 .s-account {
   background-color: tint($primary, 90%);
+  visibility: visible;
+
+  @include for-tablet-portrait-up {
+    visibility: hidden;
+  }
+
+  @include for-phone-only {
+    visibility: hidden;
+  }
+
+  @include for-desktop-up {
+    visibility: visible;
+  }
 }
 
 .s-links {
   background-color: tint($primary, 80%);
+
+  @include for-tablet-portrait-up {
+    visibility: hidden;
+  }
+
+  @include for-phone-only {
+    visibility: hidden;
+  }
+
+  @include for-desktop-up {
+    visibility: visible;
+  }
 }
