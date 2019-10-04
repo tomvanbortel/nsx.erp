@@ -628,11 +628,30 @@ ul, ol, dl {
       margin-left: -20px;
       width: 16px; }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body,
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid; }
+
 .l-wrap {
   display: -ms-grid;
   display: grid;
-  grid-gap: 0;
-  height: 100vh; }
+  grid-gap: 0; }
+  @media screen and (max-width: 599px) {
+    .l-wrap {
+      -ms-grid-columns: auto;
+      grid-template-columns: auto;
+      -ms-grid-rows: 50px auto;
+      grid-template-rows: 50px auto; } }
   @media screen and (min-width: 600px) {
     .l-wrap {
       -ms-grid-columns: auto;
@@ -667,6 +686,12 @@ aside {
   grid-gap: 0;
   background-color: #031826;
   z-index: 50; }
+  @media screen and (max-width: 599px) {
+    aside {
+      -ms-grid-columns: 200px auto;
+      grid-template-columns: 200px auto;
+      -ms-grid-rows: 50px;
+      grid-template-rows: 50px; } }
   @media screen and (min-width: 600px) {
     aside {
       -ms-grid-columns: 200px auto;
@@ -704,6 +729,12 @@ header {
 .s-links {
   background-color: #ced9e1; }
 
+@media screen and (max-width: 599px) {
+  .s-logo {
+    padding: 8px 0 0 0;
+    -ms-grid-column-align: start;
+    justify-self: start; } }
+
 @media screen and (min-width: 600px) {
   .s-logo {
     padding: 8px 0 0 0;
@@ -723,10 +754,25 @@ header {
     justify-self: center; } }
 
 .s-logo img {
-  max-width: 200px; }
+  padding: 4px 0 0 0; }
+  @media screen and (max-width: 599px) {
+    .s-logo img {
+      padding-left: 16px;
+      max-height: 30px; } }
   @media screen and (min-width: 600px) {
     .s-logo img {
+      padding-left: 16px;
       max-height: 30px; } }
+  @media screen and (min-width: 1200px) {
+    .s-logo img {
+      -ms-grid-column-align: center;
+      justify-self: center;
+      max-height: 55px; } }
+  @media screen and (min-width: 1800px) {
+    .s-logo img {
+      -ms-grid-column-align: center;
+      justify-self: center;
+      max-height: 55px; } }
 
 .s-navigation {
   display: -ms-grid;

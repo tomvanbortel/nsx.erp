@@ -4,8 +4,13 @@
 // ----------------------------------------------------------------------------- */
 
 aside {
-  display              : grid;
-  grid-gap             : 0;
+  display         : grid;
+  grid-gap        : 0;
+
+  @include for-phone-only {
+    grid-template-columns: 200px auto;
+    grid-template-rows   : 50px;
+  }
 
   @include for-tablet-portrait-up {
     grid-template-columns: 200px auto;
@@ -24,6 +29,6 @@ aside {
 
   // * ===========================================
 
-  background-color     : $primary-darker;
+  background-color: $primary-darker;
   @include layer(aside);
 }

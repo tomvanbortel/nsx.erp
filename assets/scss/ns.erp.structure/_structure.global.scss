@@ -3,11 +3,29 @@
 // Global
 // ----------------------------------------------------------------------------- */
 
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin : 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+}
+
 .l-wrap {
   display : grid;
   grid-gap: 0;
 
-  height: 100vh;
+  @include for-phone-only {
+    grid-template-columns: auto;
+    grid-template-rows   : 50px auto;
+  }
 
   @include for-tablet-portrait-up {
     grid-template-columns: auto;

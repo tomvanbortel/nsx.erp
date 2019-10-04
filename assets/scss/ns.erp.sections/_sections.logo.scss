@@ -5,6 +5,11 @@
 
 .s-logo {
 
+  @include for-phone-only {
+    padding: $spacer-stack-sm;
+    justify-self: start;
+  }
+
   @include for-tablet-portrait-up {
     padding: $spacer-stack-sm;
     justify-self: start;
@@ -23,10 +28,28 @@
   // * ===========================================
 
   & img {
-    max-width: 200px;
+    padding: $spacer-stack-xs;
+
+    @include for-phone-only {
+      padding-left: $spacer-md;
+      max-height: 30px;
+    }
 
     @include for-tablet-portrait-up {
+      padding-left: $spacer-md;
       max-height: 30px;
+    }
+
+    @include for-desktop-up {
+      justify-self: center;
+
+      max-height: 55px;
+    }
+
+    @include for-big-desktop-up {
+      justify-self: center;
+
+      max-height: 55px;
     }
   }
 }
