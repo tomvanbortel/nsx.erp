@@ -7,10 +7,10 @@
   display: grid;
   grid-gap: 0;
 
-  background-color: tint($primary, 99%);
-  border-bottom: 1px solid tint($primary, 90%);
+  background-color: $white;
+  border-bottom: 1px solid $grey-20;
 
-  box-shadow: 0px 10px 30px 0px rgba($primary, 0.05);
+  box-shadow: 0px 10px 30px 0px rgba($grey-80, 0.05);
 
   @include layer(toolbar);
 
@@ -31,9 +31,9 @@
 }
 
 .s-breadcrumb {
-  background-color: tint($primary, 75%);
+
 }
 
 .s-actions {
-  background-color: tint($primary, 85%);
+
 }

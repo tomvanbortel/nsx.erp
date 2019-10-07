@@ -7,8 +7,8 @@ header {
   display: grid;
   grid-gap: 0;
 
-  background-color: tint($primary, 99%);
-  border-bottom: 1px solid tint($primary, 90%);
+  background-color: $white;
+  border-bottom: 1px solid $grey-10;
 
   @include layer(header);
 
@@ -29,7 +29,6 @@ header {
 }
 
 .s-account {
-  background-color: tint($primary, 90%);
   visibility: visible;
 
   @include for-tablet-portrait-up {
@@ -46,7 +45,6 @@ header {
 }
 
 .s-links {
-  background-color: tint($primary, 80%);
 
   @include for-tablet-portrait-up {
     visibility: hidden;

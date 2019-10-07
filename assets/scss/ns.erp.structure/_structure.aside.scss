@@ -29,6 +29,8 @@ aside {
 
   // * ===========================================
 
-  background-color: $primary-darker;
+  background-color: $grey-20;
+  border-right: 1px solid $grey-30;
+  
   @include layer(aside);
 }

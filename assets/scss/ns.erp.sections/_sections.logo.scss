@@ -24,32 +24,50 @@
     padding     : $spacer-stack-lg;
     justify-self: center;
   }
+}
 
-  // * ===========================================
+.normalized-systems {
 
-  & img {
-    padding: $spacer-stack-xs;
+  @include for-phone-only {
+    padding-left: $spacer-md;
+    max-height  : 30px;
+  }
 
-    @include for-phone-only {
-      padding-left: $spacer-md;
-      max-height  : 30px;
-    }
+  @include for-tablet-portrait-up {
+    padding-left: $spacer-md;
+    max-height  : 30px;
+  }
 
-    @include for-tablet-portrait-up {
-      padding-left: $spacer-md;
-      max-height  : 30px;
-    }
+  @include for-desktop-up {
+    padding-left: $spacer-xs;
+    max-height  : 55px;
+  }
 
-    @include for-desktop-up {
-      justify-self: center;
+  @include for-big-desktop-up {
+    padding-left: $spacer-xs;
+    max-height  : 55px;
+  }
+}
 
-      max-height  : 55px;
-    }
+.expander-exchange {
 
-    @include for-big-desktop-up {
-      justify-self: center;
+  @include for-phone-only {
+    padding-left: $spacer-md;
+    max-height  : 30px;
+  }
 
-      max-height  : 55px;
-    }
+  @include for-tablet-portrait-up {
+    padding-left: $spacer-md;
+    max-height  : 30px;
+  }
+
+  @include for-desktop-up {
+    padding-left: $spacer-xs;
+    max-height  : 75px;
+  }
+
+  @include for-big-desktop-up {
+    padding-left: $spacer-xs;
+    max-height  : 75px;
   }
 }
