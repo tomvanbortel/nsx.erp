@@ -1,0 +1,56 @@
+// * -----------------------------------------------------------------------------
+// 8 Oct 2019 at 13:01:59
+// Link
+// ----------------------------------------------------------------------------- */
+%a {
+	text-decoration: none;
+	padding: 0 0 4px 0;
+	border-bottom: 1px dotted rgba($ns-blue, 0.16);
+
+	transition: color $animation-ease, border-color $animation-ease;
+}
+a {
+	@extend %a;
+}
+
+// * Colours
+// ----------------------------------------------------------------------------- */
+a {
+  @include ns-link;
+
+  &.ns-link--green {
+    @include ns-link($ns-green);
+  }
+
+  &.ns-link--pink {
+    @include ns-link($ns-pink);
+  }
+
+  &.ns-link--success {
+    @include ns-link($state-success);
+  }
+
+  &.ns-link--warning {
+    @include ns-link($state-warning);
+  }
+
+  &.ns-link--danger {
+    @include ns-link($state-danger);
+  }
+
+  &.ns-link--info {
+    @include ns-link($state-info);
+  }
+}
+
+.dark a {
+	color: rgba($grey-light, 0.72);
+	border-bottom: 1px dotted rgba($grey-light, 0.40);
+
+	&:hover,
+  &:active,
+  &:focus {
+    color: $white;
+    border-color: rgba($grey-light, 1);
+  }
+}

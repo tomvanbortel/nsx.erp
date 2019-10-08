@@ -1,0 +1,74 @@
+// * -----------------------------------------------------------------------------
+// 8 Oct 2019 at 08:48:39
+// Button
+// ----------------------------------------------------------------------------- */
+%button {
+  border: none;
+  border-radius: $default-radius;
+  cursor: pointer;
+  display: block;
+
+  @include font-size($font-size-body);
+  font-weight: $normal;
+  text-align: center;
+  text-decoration: none;
+
+  margin: 0;
+  padding: $btn-spacer;
+  min-height: $spacer * 2;
+  width: 100%;
+
+  user-select: none;
+
+  transition-duration: $animation-duration;
+  transition-property: color, background;
+  transition-timing-function: $animation-easing;
+
+  @include for-phone-only {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+  }
+}
+
+.ns-button,
+.ns-button__negative,
+.ns-button__outline,
+.ns-button__transparent {
+  @extend %button;
+}
+
+// * Colours
+// Provide attributes ($_color, $_background) when using this mixin
+// ----------------------------------------------------------------------------- */
+.ns-button {
+  @include ns-button;
+
+  &.ns-button--blue {
+    @include ns-button($white, $ns-blue);
+  }
+
+  &.ns-button--green {
+    @include ns-button($white, $ns-green);
+  }
+
+  &.ns-button--pink {
+    @include ns-button($white, $ns-pink);
+  }
+
+  &.ns-button--success {
+    @include ns-button($white, $state-success);
+  }
+
+  &.ns-button--warning {
+    @include ns-button($white, $state-warning);
+  }
+
+  &.ns-button--danger {
+    @include ns-button($white, $state-danger);
+  }
+
+  &.ns-button--info {
+    @include ns-button($white, $state-info);
+  }
+}
