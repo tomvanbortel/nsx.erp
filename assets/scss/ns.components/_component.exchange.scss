@@ -1,0 +1,77 @@
+// * -----------------------------------------------------------------------------
+// 7 Oct 2019 at 13:35:17
+// Component Exchange
+// ----------------------------------------------------------------------------- */
+
+.c-grid-exchange {
+  display: grid;
+  grid-gap: 20px;
+
+  margin: $spacer-stack-lg;
+
+  @include for-phone-only {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  @include for-tablet-portrait-up {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  @include for-desktop-up {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+.c-grid__block {
+  display: grid;
+  grid-gap: 0;
+
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(5, auto);
+
+  // * ===========================================
+
+  background-color: $white;
+  border-radius: $default-radius;
+  padding: $spacer-md;
+
+  // * ===========================================
+
+  .item__image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
+    border-radius: $default-radius;
+    background-color: $grey-10;
+
+    & img {
+      max-height: 128px;
+    }
+  }
+
+  .item__title {
+    text-align: center;
+  }
+
+  .item__description {
+    margin: $spacer-stack-md;
+    text-align: center;
+  }
+
+  .item__button {
+    margin: $spacer-stack-md;
+    text-align: center;
+  }
+
+  .item__links {
+    margin: $spacer-stack-md;
+    padding-bottom: $spacer-md;
+    text-align: center;
+  }
+}

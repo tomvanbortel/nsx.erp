@@ -6,6 +6,7 @@
 .s-content {
   display: grid;
   width: 100%;
+  padding: $spacer-inset-md;
 }
 
 .l-container {
@@ -14,19 +15,19 @@
   margin: $spacer-stack-lg;
 
   @include for-phone-only {
-    width: 93%;
+    max-width: $phone-size;
   }
 
   @include for-tablet-portrait-up {
-    width: 94%;
+    max-width: $tablet-size-landscape;
   }
 
   @include for-desktop-up {
-    width: $desktop;
+    max-width: $desktop;
   }
 
   @include for-big-desktop-up {
-    width: $desktop;
+    max-width: $desktop;
   }
 
 }
