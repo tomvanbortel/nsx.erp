@@ -24,6 +24,8 @@ $spacer-lg: 32px;
 $spacer-xl: 64px;
 $spacer-xxl: 96px;
 
+$spacer: 24px;
+
 // * Padding
 // ----------------------------------------------------------------------------- */
 $spacer-inset-xs: 4px 4px 4px 4px;
@@ -100,3 +102,13 @@ $z-index: (
 	header: 40,
 	toolbar: 30
 );
+
+// * Box-shadow
+// offset-x | offset-y | blur-radius | color *
+// ----------------------------------------------------------------------------- */
+$box-shadow: $spacer / 3 $spacer / 3 $spacer / 2 rgba($black, .05) !default;
+$box-shadow-reverse: $spacer / 3 $spacer / -3 $spacer / 2 rgba($black, .05) !default;
+
+// * Button
+// ----------------------------------------------------------------------------- */
+$btn-spacer: ($spacer * 7 / 12) $spacer !default;

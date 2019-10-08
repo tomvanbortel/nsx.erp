@@ -2,7 +2,7 @@
   *Tuesday 18 Dec 2018 - Time: 14:38*
 	Badge
 ----------------------------------------------------------------------------- */
-.badge {
+%badge {
 	display: inline-block;
 
 	@include font-size($font-size-caption);
@@ -20,7 +20,7 @@
 /* Badge colors
 ----------------------------------------------------------------------------- */
 .ns-badge {
-	@extend .badge;
+	@extend %badge;
 
 	&.ns-badge--primary {
 		color: $white;

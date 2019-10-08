@@ -4,10 +4,10 @@
 // ----------------------------------------------------------------------------- */
 
 // Quarks
+@import "ns.style.quarks/_quarks.colors.scss";
 @import "ns.style.quarks/_quarks.variables.scss";
 @import "ns.style.quarks/_quarks.functions.scss";
 @import "ns.style.quarks/_quarks.mixins.scss";
-@import "ns.style.quarks/_quarks.colors.scss";
 
 // Base
 @import "ns.style.base/_base.fonts.scss";
@@ -24,6 +24,8 @@
 // Atoms
 @import "ns.style.atoms/_atoms.badge.scss";
 @import "ns.style.atoms/_atoms.list.scss";
+@import "ns.style.atoms/_atoms.button.scss";
+@import "ns.style.atoms/_atoms.link.scss";
 
 // * ERP
 // ----------------------------------------------------------------------------- */

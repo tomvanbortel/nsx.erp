@@ -159,43 +159,9 @@ hr {
 	margin: $spacer-md 0;
 }
 
-/* Links
------------------------------------------------------------------------------ */
-a {
-	color: rgba($primary, 0.72);
-	text-decoration: none;
-	padding: 0 0 4px 0;
-	border-bottom: 1px dotted rgba($primary, 0.16);
-
-	transition: color $animation-ease, border-color $animation-ease;
-
-	&:hover,
-  &:active,
-  &:focus {
-    color: $primary;
-    border-color: rgba($primary, 0.64);
-  }
-
-  &:focus {
-  	outline: none;
-  }
-}
-
-.dark a {
-	color: rgba($grey-light, 0.72);
-	border-bottom: 1px dotted rgba($grey-light, 0.40);
-
-	&:hover,
-  &:active,
-  &:focus {
-    color: $white;
-    border-color: rgba($grey-light, 1);
-  }
-}
-
 /* Selection
 ----------------------------------------------------------------------------- */
 ::selection {
-	background-color: tint($primary, 80%);
-	color: $primary-dark;
+	background-color: tint($ns-blue, 80%);
+	color: $ns-blue;
 }

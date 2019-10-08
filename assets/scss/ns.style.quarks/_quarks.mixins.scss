@@ -2,7 +2,7 @@
     Mixins
 ----------------------------------------------------------------------------- */
 
-/* Tint 
+/* Tint
 ----------------------------------------------------------------------------- */
 @function tint($color,$percent) {
   @if not _is-color($color) {
@@ -53,7 +53,7 @@
   @media screen and (min-width: $_min-width) { @content; }
 }
 
-@mixin to($_max-width) { 
+@mixin to($_max-width) {
   @media screen and (max-width: $_max-width) { @content; }
 }
 
@@ -79,5 +79,65 @@
     content: '';
     display: block;
     clear: both;
+  }
+}
+
+// * Button
+// Provide attributes ($_color, $_background) when using this mixin
+// ----------------------------------------------------------------------------- */
+@mixin ns-button($_color: $white, $_background: $ns-blue) {
+
+  @if $_background != $white {
+    background-color: $_background;
+    color: $_color;
+  }
+  @else if $_background == $white {
+    background-color: $_background;
+    color: $grey-dark;
+    border: 1px solid $grey-light;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $_color;
+    text-decoration: none;
+
+    @if $_background != $primary and $_background != $secondary and $_background != $white {
+      background-color: shade($_background, 24%);
+    } @else if $_background == $primary {
+      background-color: tint($_background, 24%);
+    } @else if $_background == $secondary {
+      background-color: tint($_background, 24%);
+    } @else {
+      background-color: shade($_background, 24%);
+    }
+  }
+
+  &:focus {
+    box-shadow: $box-shadow;
+  }
+
+  &[disabled] {
+    background-color: $state-disabled;
+    color: $white;
+    cursor: not-allowed;
+  }
+}
+
+// * Link
+// ----------------------------------------------------------------------------- */
+@mixin ns-link($_color: $ns-blue) {
+  color: rgba($_color, 0.72);
+
+	&:hover,
+  &:active,
+  &:focus {
+    color: $_color;
+    border-color: rgba($_color, 0.64);
+  }
+
+  &:focus {
+  	outline: none;
   }
 }

@@ -9,7 +9,7 @@
 /* -----------------------------------------------------------------------------
     Mixins
 ----------------------------------------------------------------------------- */
-/* Tint 
+/* Tint
 ----------------------------------------------------------------------------- */
 /* Shade
 ----------------------------------------------------------------------------- */
@@ -194,37 +194,14 @@ hr {
   height: 1px;
   margin: 16px 0; }
 
-/* Links
------------------------------------------------------------------------------ */
-a {
-  color: rgba(8, 67, 106, 0.72);
-  text-decoration: none;
-  padding: 0 0 4px 0;
-  border-bottom: 1px dotted rgba(8, 67, 106, 0.16);
-  -webkit-transition: color 300ms ease, border-color 300ms ease;
-  -o-transition: color 300ms ease, border-color 300ms ease;
-  transition: color 300ms ease, border-color 300ms ease; }
-  a:hover, a:active, a:focus {
-    color: #08436a;
-    border-color: rgba(8, 67, 106, 0.64); }
-  a:focus {
-    outline: none; }
-
-.dark a {
-  color: rgba(216, 216, 216, 0.72);
-  border-bottom: 1px dotted rgba(216, 216, 216, 0.4); }
-  .dark a:hover, .dark a:active, .dark a:focus {
-    color: white;
-    border-color: #d8d8d8; }
-
 /* Selection
 ----------------------------------------------------------------------------- */
 ::-moz-selection {
-  background-color: #ced9e1;
-  color: #052e48; }
+  background-color: #cedef0;
+  color: #0a59b4; }
 ::selection {
-  background-color: #ced9e1;
-  color: #052e48; }
+  background-color: #cedef0;
+  color: #0a59b4; }
 
 /* -----------------------------------------------------------------------------
 	*Wednesday 12 Dec 2018 - Time: 08:19*   
@@ -530,7 +507,7 @@ figure {
   *Tuesday 18 Dec 2018 - Time: 14:38*
 	Badge
 ----------------------------------------------------------------------------- */
-.badge, .ns-badge {
+.ns-badge {
   display: inline-block;
   font-size: 11px;
   font-size: 0.6875rem;
@@ -627,6 +604,225 @@ ul, ol, dl {
       display: inline-block;
       margin-left: -20px;
       width: 16px; }
+
+.ns-button,
+.ns-button__negative,
+.ns-button__outline,
+.ns-button__transparent {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 26px;
+  line-height: 1.618rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 14px 24px;
+  min-height: 48px;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-property: color, background;
+  -o-transition-property: color, background;
+  transition-property: color, background;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease; }
+  @media screen and (max-width: 599px) {
+    .ns-button,
+    .ns-button__negative,
+    .ns-button__outline,
+    .ns-button__transparent {
+      display: inline-block;
+      vertical-align: middle;
+      width: auto; } }
+
+.ns-button {
+  background-color: #0a59b4;
+  color: white; }
+  .ns-button:hover, .ns-button:active, .ns-button:focus {
+    color: white;
+    text-decoration: none;
+    background-color: #084489; }
+  .ns-button:focus {
+    -webkit-box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05); }
+  .ns-button[disabled] {
+    background-color: #d8d8d8;
+    color: white;
+    cursor: not-allowed; }
+  .ns-button.ns-button--blue {
+    background-color: #0a59b4;
+    color: white; }
+    .ns-button.ns-button--blue:hover, .ns-button.ns-button--blue:active, .ns-button.ns-button--blue:focus {
+      color: white;
+      text-decoration: none;
+      background-color: #084489; }
+    .ns-button.ns-button--blue:focus {
+      -webkit-box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05);
+      box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05); }
+    .ns-button.ns-button--blue[disabled] {
+      background-color: #d8d8d8;
+      color: white;
+      cursor: not-allowed; }
+  .ns-button.ns-button--green {
+    background-color: #8eb415;
+    color: white; }
+    .ns-button.ns-button--green:hover, .ns-button.ns-button--green:active, .ns-button.ns-button--green:focus {
+      color: white;
+      text-decoration: none;
+      background-color: #6c8910; }
+    .ns-button.ns-button--green:focus {
+      -webkit-box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05);
+      box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05); }
+    .ns-button.ns-button--green[disabled] {
+      background-color: #d8d8d8;
+      color: white;
+      cursor: not-allowed; }
+  .ns-button.ns-button--pink {
+    background-color: #b40a7d;
+    color: white; }
+    .ns-button.ns-button--pink:hover, .ns-button.ns-button--pink:active, .ns-button.ns-button--pink:focus {
+      color: white;
+      text-decoration: none;
+      background-color: #89085f; }
+    .ns-button.ns-button--pink:focus {
+      -webkit-box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05);
+      box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05); }
+    .ns-button.ns-button--pink[disabled] {
+      background-color: #d8d8d8;
+      color: white;
+      cursor: not-allowed; }
+  .ns-button.ns-button--success {
+    background-color: #32b400;
+    color: white; }
+    .ns-button.ns-button--success:hover, .ns-button.ns-button--success:active, .ns-button.ns-button--success:focus {
+      color: white;
+      text-decoration: none;
+      background-color: #268900; }
+    .ns-button.ns-button--success:focus {
+      -webkit-box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05);
+      box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05); }
+    .ns-button.ns-button--success[disabled] {
+      background-color: #d8d8d8;
+      color: white;
+      cursor: not-allowed; }
+  .ns-button.ns-button--warning {
+    background-color: #f9b01e;
+    color: white; }
+    .ns-button.ns-button--warning:hover, .ns-button.ns-button--warning:active, .ns-button.ns-button--warning:focus {
+      color: white;
+      text-decoration: none;
+      background-color: #bd8617; }
+    .ns-button.ns-button--warning:focus {
+      -webkit-box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05);
+      box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05); }
+    .ns-button.ns-button--warning[disabled] {
+      background-color: #d8d8d8;
+      color: white;
+      cursor: not-allowed; }
+  .ns-button.ns-button--danger {
+    background-color: #da291c;
+    color: white; }
+    .ns-button.ns-button--danger:hover, .ns-button.ns-button--danger:active, .ns-button.ns-button--danger:focus {
+      color: white;
+      text-decoration: none;
+      background-color: #a61f15; }
+    .ns-button.ns-button--danger:focus {
+      -webkit-box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05);
+      box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05); }
+    .ns-button.ns-button--danger[disabled] {
+      background-color: #d8d8d8;
+      color: white;
+      cursor: not-allowed; }
+  .ns-button.ns-button--info {
+    background-color: #0064b4;
+    color: white; }
+    .ns-button.ns-button--info:hover, .ns-button.ns-button--info:active, .ns-button.ns-button--info:focus {
+      color: white;
+      text-decoration: none;
+      background-color: #004c89; }
+    .ns-button.ns-button--info:focus {
+      -webkit-box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05);
+      box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05); }
+    .ns-button.ns-button--info[disabled] {
+      background-color: #d8d8d8;
+      color: white;
+      cursor: not-allowed; }
+
+a {
+  text-decoration: none;
+  padding: 0 0 4px 0;
+  border-bottom: 1px dotted rgba(10, 89, 180, 0.16);
+  -webkit-transition: color 300ms ease, border-color 300ms ease;
+  -o-transition: color 300ms ease, border-color 300ms ease;
+  transition: color 300ms ease, border-color 300ms ease; }
+
+a {
+  color: rgba(10, 89, 180, 0.72); }
+  a:hover, a:active, a:focus {
+    color: #0a59b4;
+    border-color: rgba(10, 89, 180, 0.64); }
+  a:focus {
+    outline: none; }
+  a.ns-link--green {
+    color: rgba(142, 180, 21, 0.72); }
+    a.ns-link--green:hover, a.ns-link--green:active, a.ns-link--green:focus {
+      color: #8eb415;
+      border-color: rgba(142, 180, 21, 0.64); }
+    a.ns-link--green:focus {
+      outline: none; }
+  a.ns-link--pink {
+    color: rgba(180, 10, 125, 0.72); }
+    a.ns-link--pink:hover, a.ns-link--pink:active, a.ns-link--pink:focus {
+      color: #b40a7d;
+      border-color: rgba(180, 10, 125, 0.64); }
+    a.ns-link--pink:focus {
+      outline: none; }
+  a.ns-link--success {
+    color: rgba(50, 180, 0, 0.72); }
+    a.ns-link--success:hover, a.ns-link--success:active, a.ns-link--success:focus {
+      color: #32b400;
+      border-color: rgba(50, 180, 0, 0.64); }
+    a.ns-link--success:focus {
+      outline: none; }
+  a.ns-link--warning {
+    color: rgba(249, 176, 30, 0.72); }
+    a.ns-link--warning:hover, a.ns-link--warning:active, a.ns-link--warning:focus {
+      color: #f9b01e;
+      border-color: rgba(249, 176, 30, 0.64); }
+    a.ns-link--warning:focus {
+      outline: none; }
+  a.ns-link--danger {
+    color: rgba(218, 41, 28, 0.72); }
+    a.ns-link--danger:hover, a.ns-link--danger:active, a.ns-link--danger:focus {
+      color: #da291c;
+      border-color: rgba(218, 41, 28, 0.64); }
+    a.ns-link--danger:focus {
+      outline: none; }
+  a.ns-link--info {
+    color: rgba(0, 100, 180, 0.72); }
+    a.ns-link--info:hover, a.ns-link--info:active, a.ns-link--info:focus {
+      color: #0064b4;
+      border-color: rgba(0, 100, 180, 0.64); }
+    a.ns-link--info:focus {
+      outline: none; }
+
+.dark a {
+  color: rgba(216, 216, 216, 0.72);
+  border-bottom: 1px dotted rgba(216, 216, 216, 0.4); }
+  .dark a:hover, .dark a:active, .dark a:focus {
+    color: white;
+    border-color: #d8d8d8; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -935,7 +1131,9 @@ nav {
   grid-template-rows: repeat(5, auto);
   background-color: white;
   border-radius: 8px;
-  padding: 16px; }
+  padding: 16px;
+  -webkit-box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05); }
   .c-grid__block .item__image {
     display: -webkit-box;
     display: -ms-flexbox;
