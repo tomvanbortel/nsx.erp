@@ -3,7 +3,7 @@
 	Utilities Text
 ----------------------------------------------------------------------------- */
 
-/* Text Style 
+/* Text Style
 ----------------------------------------------------------------------------- */
 .ns-text-bold {
 	font-weight: $bold;
@@ -53,6 +53,18 @@
 ----------------------------------------------------------------------------- */
 .ns-text-primary {
 	color: $primary;
+}
+
+.ns-text-blue {
+	color: $ns-blue;
+}
+
+.ns-text-green {
+	color: $ns-green;
+}
+
+.ns-text-pink {
+	color: $ns-pink;
 }
 
 .ns-text-succes {

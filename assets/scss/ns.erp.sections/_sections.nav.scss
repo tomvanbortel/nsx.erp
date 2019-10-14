@@ -12,3 +12,98 @@
 nav {
   padding: $spacer-inset-md;
 }
+
+// * Nav
+// ----------------------------------------------------------------------------- */
+.c-nav {
+  list-style: none;
+  margin: 0;
+  padding: $spacer-stack-md;
+}
+
+.c-nav__section {
+  display: flex;
+  padding: 0 $spacer-md;
+
+  & .section__title {
+    text-transform: uppercase;
+    font-weight: $bold;
+    letter-spacing: 0.5px;
+
+    margin: $spacer-stack-md;
+    height: 40px;
+  }
+}
+
+.c-nav__item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  float: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c-nav__link {
+  display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+
+  padding: $spacer-xs $spacer-md;
+  min-height: 44px;
+
+  text-decoration: none;
+  border-bottom: 0;
+  cursor: pointer;
+
+  & .link__icon {
+    flex: 0 0 $spacer-lg;
+  }
+
+  & .link__text {
+    text-transform: capitalize;
+  }
+}
+
+// * Subnav
+// ----------------------------------------------------------------------------- */
+.c-subnav {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: $grey-30;
+}
+
+.c-subnav__item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  float: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.c-subnav__link {
+  display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+
+  padding: $spacer-xs $spacer-md;
+  min-height: 40px;
+
+  text-decoration: none;
+  border-bottom: 0;
+  cursor: pointer;
+
+  & .link__icon {
+    vertical-align: middle;
+    flex: 0 0 $spacer-lg;
+  }
+
+  & .link__text {
+    text-transform: capitalize;
+  }
+}
