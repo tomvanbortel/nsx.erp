@@ -1125,6 +1125,9 @@ nav {
   .c-nav__link .link__text {
     text-transform: capitalize; }
 
+.c-nav__subnav {
+  margin-bottom: 16px; }
+
 .c-subnav {
   list-style: none;
   margin: 0;

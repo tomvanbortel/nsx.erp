@@ -67,6 +67,10 @@ nav {
 
 // * Subnav
 // ----------------------------------------------------------------------------- */
+.c-nav__subnav {
+  margin-bottom: $spacer-md;
+}
+
 .c-subnav {
   list-style: none;
 
