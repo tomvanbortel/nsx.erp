@@ -721,6 +721,26 @@
       </section>
     </main>
   </div>
+  <script>
+var nav = document.getElementsByClassName("c-nav__item");
+var i;
+for (i = 0; i < nav.length; i++) {
+  nav[i].addEventListener("click", function() {
+    var subnav = this.querySelector(".c-nav__subnav");
+    subnav.classList.toggle("active");
+    var subnavs = document.getElementsByClassName("c-nav__subnav");
+    var j;
+    for (j = 0; j < nav.length; j++) {    
+      if(subnavs[j].classList.contains("active")
+        && subnavs[j] === subnav){
+        subnavs[j].style.display = "block";
+      } else {
+        subnavs[j].style.display = "none";
+        subnavs[j].classList.remove("active");
+      }
+    }
+  });
+}
+</script>
 </body>
-
 </html>
