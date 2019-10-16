@@ -28,6 +28,7 @@ nav {
   & .section__title {
     text-transform: uppercase;
     font-weight: $bold;
+    @include font-size($font-size-small);
     letter-spacing: 0.5px;
 
     margin: $spacer-stack-md;
@@ -63,6 +64,11 @@ nav {
   & .link__text {
     text-transform: capitalize;
   }
+
+  & .link__arrow {
+    flex-grow: 1;
+    text-align: right;
+  }
 }
 
 // * Subnav
@@ -77,7 +83,7 @@ nav {
   margin: 0;
   padding: 0;
 
-  background-color: $grey-30;
+  background-color: $grey-20;
 }
 
 .c-subnav__item {
@@ -100,14 +106,28 @@ nav {
 
   text-decoration: none;
   border-bottom: 0;
+  border-radius: $default-radius;
   cursor: pointer;
 
+  transition: background-color 0.25s ease;
+  background-color: $grey-20;
+
   & .link__icon {
-    vertical-align: middle;
+    align-self: center;
     flex: 0 0 $spacer-lg;
+
+    @include font-size($font-size-small);
   }
 
   & .link__text {
+    @include font-size($font-size-small);
     text-transform: capitalize;
+    font-weight: $bold;
+
+    align-self: center;
+  }
+
+  &:hover {
+    background-color: $grey-30;
   }
 }
