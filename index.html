@@ -26,12 +26,12 @@
               <div class="section__title">Admin</div>
             </li>
             <li class="c-nav__item">
-              <a class="c-nav__link" href="javascript:void(0);">
+              <a class="c-nav__link" href="">
                 <span class="link__icon"><i class="far fa-abacus"></i></span>
                 <span class="link__text">Utils</span>
                 <span class="link__arrow"><i class="far fa-angle-right"></i></span>
               </a>
-              <div class="c-nav__subnav active">
+              <div class="c-nav__subnav">
                 <ul class="c-subnav">
                   <li class="c-subnav__item">
                     <a class="c-subnav__link" href="#">
@@ -754,27 +754,27 @@
       </section>
     </main>
   </div>
-  <!-- <script type="text/javascript" src="assets/js/collapse.js"></script> -->
+  <script type="text/javascript" src="assets/js/collapse.js"></script>
 <script>
-  var nav = document.getElementsByClassName("c-nav__item");
-  var i;
-  for (i = 0; i < nav.length; i++) {
-    nav[i].addEventListener("click", function() {
-      var subnav = this.querySelector(".c-nav__subnav");
-      subnav.classList.toggle("active");
-      var subnavs = document.getElementsByClassName("c-nav__subnav");
-      var j;
-      for (j = 0; j < nav.length; j++) {
-        if(subnavs[j].classList.contains("active")
-          && subnavs[j] === subnav){
-          subnavs[j].style.display = "block";
-        } else {
-          subnavs[j].style.display = "none";
-          subnavs[j].classList.remove("active");
-        }
-      }
-    });
-  }
+  // var nav = document.getElementsByClassName("c-nav__item");
+  // var i;
+  // for (i = 0; i < nav.length; i++) {
+  //   nav[i].addEventListener("click", function() {
+  //     var subnav = this.querySelector(".c-nav__subnav");
+  //     subnav.classList.toggle("active");
+  //     var subnavs = document.getElementsByClassName("c-nav__subnav");
+  //     var j;
+  //     for (j = 0; j < nav.length; j++) {
+  //       if(subnavs[j].classList.contains("active")
+  //         && subnavs[j] === subnav){
+  //         subnavs[j].style.display = "block";
+  //       } else {
+  //         subnavs[j].style.display = "none";
+  //         subnavs[j].classList.remove("active");
+  //       }
+  //     }
+  //   });
+  // }
 </script>
 </body>
 </html>

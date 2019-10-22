@@ -80,6 +80,8 @@ nav {
   transition:height 0.3s ease-out;
   height:auto;
 
+  display: none;
+
   &.active {
     background-color: $grey-30;
     height: auto;
