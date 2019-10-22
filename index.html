@@ -26,17 +26,22 @@
               <div class="section__title">Admin</div>
             </li>
             <li class="c-nav__item">
-              <a class="c-nav__link" href="#">
+              <a class="c-nav__link" href="javascript:void(0);">
                 <span class="link__icon"><i class="far fa-abacus"></i></span>
                 <span class="link__text">Utils</span>
                 <span class="link__arrow"><i class="far fa-angle-right"></i></span>
               </a>
-              <div class="c-nav__subnav">
+              <div class="c-nav__subnav active">
                 <ul class="c-subnav">
                   <li class="c-subnav__item">
                     <a class="c-subnav__link" href="#">
                       <span class="link__icon"><i class="far fa-archive"></i></span>
                       <span class="link__text">Execution list</span>
+                      <span class="link__badge">
+                        <div class="ns-badge ns-badge--green">
+                          new
+                        </div>
+                      </span>
                     </a>
                   </li>
                   <li class="c-subnav__item">
@@ -55,6 +60,11 @@
                     <a class="c-subnav__link" href="#">
                       <span class="link__icon"><i class="far fa-archive"></i></span>
                       <span class="link__text">tagValuePair</span>
+                      <span class="link__badge">
+                        <div class="ns-badge ns-badge--danger">
+                          error
+                        </div>
+                      </span>
                     </a>
                   </li>
                   <li class="c-subnav__item">
@@ -90,6 +100,11 @@
                     <a class="c-subnav__link" href="#">
                       <span class="link__icon"><i class="far fa-archive"></i></span>
                       <span class="link__text">DataAcces</span>
+                      <span class="link__badge">
+                        <div class="ns-badge ns-badge--pink">
+                          feature
+                        </div>
+                      </span>
                     </a>
                   </li>
                   <li class="c-subnav__item">
@@ -120,6 +135,11 @@
                     <a class="c-subnav__link" href="#">
                       <span class="link__icon"><i class="far fa-archive"></i></span>
                       <span class="link__text">Profiles</span>
+                      <span class="link__badge">
+                        <div class="ns-badge ns-badge--green">
+                          new
+                        </div>
+                      </span>
                     </a>
                   </li>
                   <li class="c-subnav__item">
@@ -179,6 +199,11 @@
                     <a class="c-subnav__link" href="#">
                       <span class="link__icon"><i class="far fa-archive"></i></span>
                       <span class="link__text">Time Tasks</span>
+                      <span class="link__badge">
+                        <div class="ns-badge ns-badge--blue">
+                          update
+                        </div>
+                      </span>
                     </a>
                   </li>
                   <li class="c-subnav__item">
@@ -203,7 +228,7 @@
               </div>
             </li>
             <li class="c-nav__item">
-              <a class="c-nav__link" href="#">
+              <a class="c-nav__link" href="javascript:void(0);">
                 <span class="link__icon"><i class="far fa-arrow-alt-circle-right"></i></span>
                 <span class="link__text">Assets</span>
                 <span class="link__arrow"><i class="far fa-angle-right"></i></span>
@@ -434,6 +459,7 @@
               <a class="c-nav__link" href="#">
                 <span class="link__icon"><i class="far fa-arrow-alt-circle-right"></i></span>
                 <span class="link__text">Products</span>
+                <span class="link__arrow"><i class="far fa-angle-right"></i></span>
               </a>
               <div class="c-nav__subnav">
                 <ul class="c-subnav">
@@ -708,6 +734,14 @@
       <section class="s-toolbar">
         <section class="s-breadcrumb">
           <!-- text: breadcrumb -->
+          <div class="c-breadcrumb">
+            <div class="">
+              <i class="fas fa-home-lg-alt"></i> &nbsp;/&nbsp;
+            </div>
+            <div class="">
+              list of links
+            </div>
+          </div>
         </section>
         <section class="s-actions">
           <!-- text: toolbar actions -->
@@ -720,26 +754,27 @@
       </section>
     </main>
   </div>
-  <script>
-var nav = document.getElementsByClassName("c-nav__item");
-var i;
-for (i = 0; i < nav.length; i++) {
-  nav[i].addEventListener("click", function() {
-    var subnav = this.querySelector(".c-nav__subnav");
-    subnav.classList.toggle("active");
-    var subnavs = document.getElementsByClassName("c-nav__subnav");
-    var j;
-    for (j = 0; j < nav.length; j++) {    
-      if(subnavs[j].classList.contains("active")
-        && subnavs[j] === subnav){
-        subnavs[j].style.display = "block";
-      } else {
-        subnavs[j].style.display = "none";
-        subnavs[j].classList.remove("active");
+  <!-- <script type="text/javascript" src="assets/js/collapse.js"></script> -->
+<script>
+  var nav = document.getElementsByClassName("c-nav__item");
+  var i;
+  for (i = 0; i < nav.length; i++) {
+    nav[i].addEventListener("click", function() {
+      var subnav = this.querySelector(".c-nav__subnav");
+      subnav.classList.toggle("active");
+      var subnavs = document.getElementsByClassName("c-nav__subnav");
+      var j;
+      for (j = 0; j < nav.length; j++) {
+        if(subnavs[j].classList.contains("active")
+          && subnavs[j] === subnav){
+          subnavs[j].style.display = "block";
+        } else {
+          subnavs[j].style.display = "none";
+          subnavs[j].classList.remove("active");
+        }
       }
-    }
-  });
-}
+    });
+  }
 </script>
 </body>
 </html>
