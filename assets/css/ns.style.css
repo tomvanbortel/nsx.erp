@@ -519,15 +519,14 @@ figure {
 .ns-badge {
   display: inline-block;
   font-size: 11px;
-  font-size: 0.6875rem;
-  line-height: 18px;
-  line-height: 1.11238rem;
+  line-height: 12px;
   font-weight: 700;
-  min-height: 8px;
-  padding: 2px 8px;
+  text-transform: uppercase;
+  max-height: 21px;
+  padding: 4px;
   background-color: #d8d8d8;
   color: black;
-  border-radius: 8px; }
+  border-radius: 4px; }
 
 /* Badge colors
 ----------------------------------------------------------------------------- */
@@ -537,7 +536,19 @@ figure {
 
 .ns-badge.ns-badge--secondary {
   color: white;
-  background-color: #08436a; }
+  background-color: #7c0033; }
+
+.ns-badge.ns-badge--blue {
+  color: white;
+  background-color: #0a59b4; }
+
+.ns-badge.ns-badge--green {
+  color: white;
+  background-color: #8eb415; }
+
+.ns-badge.ns-badge--pink {
+  color: white;
+  background-color: #b40a7d; }
 
 .ns-badge.ns-badge--success {
   color: white;
@@ -1135,13 +1146,23 @@ nav {
     text-align: right; }
 
 .c-nav__subnav {
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s ease-out;
+  -o-transition: height 0.3s ease-out;
+  transition: height 0.3s ease-out;
+  height: auto; }
+  .c-nav__subnav.active {
+    background-color: #dadada;
+    height: auto;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; }
 
 .c-subnav {
   list-style: none;
   margin: 0;
-  padding: 0;
-  background-color: #e6e6e6; }
+  padding: 0; }
 
 .c-subnav__item {
   display: -webkit-box;
@@ -1176,8 +1197,7 @@ nav {
   cursor: pointer;
   -webkit-transition: background-color 0.25s ease;
   -o-transition: background-color 0.25s ease;
-  transition: background-color 0.25s ease;
-  background-color: #e6e6e6; }
+  transition: background-color 0.25s ease; }
   .c-subnav__link .link__icon {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -1199,8 +1219,20 @@ nav {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center; }
+  .c-subnav__link .link__badge {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-item-align: center;
+    align-self: center; }
   .c-subnav__link:hover {
-    background-color: #dadada; }
+    background-color: #cecece; }
 
 .s-toolbar {
   display: -ms-grid;
@@ -1322,8 +1354,3 @@ nav {
     margin: 16px 0 0 0;
     padding-bottom: 16px;
     text-align: center; }
-
-.c-nav__subnav {
-display: none;
-
-}

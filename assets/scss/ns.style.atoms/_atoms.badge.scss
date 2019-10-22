@@ -5,16 +5,18 @@
 %badge {
 	display: inline-block;
 
-	@include font-size($font-size-caption);
+	font-size: $badge-font-size;
+	line-height: $badge-line-height;
 	font-weight: $bold;
+	text-transform: uppercase;
 
-	min-height: $spacer-sm;
-	padding: $spacer-md / 8 $spacer-md / 2;
+	max-height: $badge-height;
+	padding: $spacer-xs;
 
 	background-color: $grey-light;
 	color: $text-color;
 
-	border-radius: $default-radius;
+	border-radius: $default-radius / 2;
 }
 
 /* Badge colors
@@ -29,7 +31,22 @@
 
 	&.ns-badge--secondary {
 		color: $white;
-		background-color: $primary;
+		background-color: $secondary;
+	}
+
+	&.ns-badge--blue {
+		color: $white;
+		background-color: $ns-blue;
+	}
+
+	&.ns-badge--green {
+		color: $white;
+		background-color: $ns-green;
+	}
+
+	&.ns-badge--pink {
+		color: $white;
+		background-color: $ns-pink;
 	}
 
 	&.ns-badge--success {

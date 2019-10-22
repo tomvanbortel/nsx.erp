@@ -112,3 +112,10 @@ $box-shadow-reverse: $spacer / 3 $spacer / -3 $spacer / 2 rgba($black, .05) !def
 // * Button
 // ----------------------------------------------------------------------------- */
 $btn-spacer: ($spacer * 7 / 12) $spacer !default;
+
+// * Badge
+// ----------------------------------------------------------------------------- */
+$badge-height: 21px;
+
+$badge-font-size: 11px;
+$badge-line-height: 12px;

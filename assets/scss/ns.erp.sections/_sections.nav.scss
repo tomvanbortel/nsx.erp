@@ -75,6 +75,16 @@ nav {
 // ----------------------------------------------------------------------------- */
 .c-nav__subnav {
   margin-bottom: $spacer-md;
+
+  overflow:hidden;
+  transition:height 0.3s ease-out;
+  height:auto;
+
+  &.active {
+    background-color: $grey-30;
+    height: auto;
+    transition: all 500ms ease;
+  }
 }
 
 .c-subnav {
@@ -82,8 +92,6 @@ nav {
 
   margin: 0;
   padding: 0;
-
-  background-color: $grey-20;
 }
 
 .c-subnav__item {
@@ -110,7 +118,6 @@ nav {
   cursor: pointer;
 
   transition: background-color 0.25s ease;
-  background-color: $grey-20;
 
   & .link__icon {
     align-self: center;
@@ -127,7 +134,16 @@ nav {
     align-self: center;
   }
 
+  & .link__badge {
+    display: flex;
+    flex-grow: 1;
+
+    justify-content: flex-end;
+
+    align-self: center;
+  }
+
   &:hover {
-    background-color: $grey-30;
+    background-color: $grey-40;
   }
 }
