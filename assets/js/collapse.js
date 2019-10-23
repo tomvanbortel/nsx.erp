@@ -56,7 +56,7 @@ document.querySelector('.c-nav__item').addEventListener('click', function(e) {
     collapseSection(section);
   }
 });
-
+}
 // var links = document.querySelectorAll(".c-nav__link");
 // links.forEach(function(link) {
 //
@@ -75,4 +75,4 @@ document.querySelector('.c-nav__item').addEventListener('click', function(e) {
 //     });
 //   }
 // });
-
+// }

@@ -1116,13 +1116,13 @@ nav {
   padding: 0 16px; }
   .c-nav__section .section__title {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 13px;
     font-size: 0.8125rem;
     line-height: 21px;
     line-height: 1.31463rem;
     letter-spacing: 0.5px;
-    margin: 16px 0 0 0;
+    margin: 4px 0 0 0;
     height: 40px; }
 
 .c-nav__item {
@@ -1168,19 +1168,18 @@ nav {
     text-align: right; }
 
 .c-nav__subnav {
-  margin-bottom: 16px;
+  max-height: 0;
+  display: block;
   overflow: hidden;
-  -webkit-transition: height 0.3s ease-out;
-  -o-transition: height 0.3s ease-out;
-  transition: height 0.3s ease-out;
-  height: auto;
-  display: none; }
+  -webkit-transition: max-height 0.3s ease-out;
+  -o-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out; }
   .c-nav__subnav.active {
     background-color: #dadada;
     height: auto;
-    -webkit-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease; }
+    -webkit-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease; }
 
 .c-subnav {
   list-style: none;
@@ -1200,7 +1199,7 @@ nav {
   flex-grow: 1;
   float: none;
   margin: 0;
-  padding: 0;}
+  padding: 0; }
 
 .c-subnav__link {
   display: -webkit-box;
@@ -1377,11 +1376,3 @@ nav {
     margin: 16px 0 0 0;
     padding-bottom: 16px;
     text-align: center; }
-
-/*------------------- added by Dirk DS --------*/
-  .c-nav__subnav {
-    max-height: 0;
-    display: block;
-    overflow: hidden;
-    transition: max-height 0.8s ease-out;
-  }
