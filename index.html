@@ -735,10 +735,12 @@
         <section class="s-breadcrumb">
           <!-- text: breadcrumb -->
           <div class="c-breadcrumb">
-            <ul>
-              <li><i class="fas fa-home-lg-alt"></i> &nbsp;/&nbsp;</li>
-              <li>list of links</li>
-            </ul>
+            <div class="">
+              <i class="fas fa-home-lg-alt"></i> &nbsp;/&nbsp;
+            </div>
+            <div class="">
+              list of links
+            </div>
           </div>
         </section>
         <section class="s-actions">
@@ -748,34 +750,35 @@
       <section class="s-content">
         <div class="l-container">
           <!-- content container -->
-          <div class="">
-
-          </div>
         </div>
       </section>
     </main>
   </div>
-  <!-- <script type="text/javascript" src="assets/js/collapse.js"></script> -->
+<!--  
+<script type="text/javascript" src="assets/js/collapse.js"></script>
+-->
 <script>
-  var nav = document.getElementsByClassName("c-nav__item");
-  var i;
-  for (i = 0; i < nav.length; i++) {
-    nav[i].addEventListener("click", function() {
-      var subnav = this.querySelector(".c-nav__subnav");
-      subnav.classList.toggle("active");
-      var subnavs = document.getElementsByClassName("c-nav__subnav");
-      var j;
-      for (j = 0; j < nav.length; j++) {
-        if(subnavs[j].classList.contains("active")
-          && subnavs[j] === subnav){
-          subnavs[j].style.display = "block";
-        } else {
-          subnavs[j].style.display = "none";
-          subnavs[j].classList.remove("active");
-        }
-      }
-    });
-  }
+   var nav = document.getElementsByClassName("c-nav__item");
+   var i;
+   for (i = 0; i < nav.length; i++) {
+     nav[i].addEventListener("click", function() {
+       var subnav = this.querySelector(".c-nav__subnav");
+       subnav.classList.toggle("active");
+       var subnavs = document.getElementsByClassName("c-nav__subnav");
+       var j;
+       for (j = 0; j < nav.length; j++) {
+         if(subnavs[j].classList.contains("active")
+           && subnavs[j] === subnav){
+       //    subnavs[j].style.display = "block";
+            subnavs[j].style.maxHeight =  subnavs[j].scrollHeight + "px";
+         } else {
+      //    subnavs[j].style.display = "none";
+            subnavs[j].style.maxHeight = 0;
+            subnavs[j].classList.remove("active");
+         }
+       }
+     });
+   } 
 </script>
 </body>
 </html>

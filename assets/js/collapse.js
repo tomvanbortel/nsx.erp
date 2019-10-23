@@ -46,15 +46,14 @@ function expandSection(element) {
   element.setAttribute('data-collapsed', 'false');
 }
 
-document.querySelector('.c-nav__link').addEventListener('click', function(e) {
-  var section = document.querySelector('.c-nav__subnav.collapsible');
+document.querySelector('.c-nav__item').addEventListener('click', function(e) {
+  var section = document.querySelector('.c-nav__subnav');
   var isCollapsed = section.getAttribute('data-collapsed') === 'true';
 
   if(isCollapsed) {
-    expandSection(section)
-    section.setAttribute('data-collapsed', 'false')
+    expandSection(section);
   } else {
-    collapseSection(section)
+    collapseSection(section);
   }
 });
 
@@ -76,3 +75,4 @@ document.querySelector('.c-nav__link').addEventListener('click', function(e) {
 //     });
 //   }
 // });
+
