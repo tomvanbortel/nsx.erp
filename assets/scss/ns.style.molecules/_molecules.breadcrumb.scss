@@ -2,3 +2,19 @@
 // 22 Oct 2019 at 09:10:40
 // Breadcrumb
 // ----------------------------------------------------------------------------- */
+%breadcrumb {
+  padding: $spacer-md $spacer-lg;
+}
+
+.c-breadcrumb {
+  @extend %breadcrumb;
+
+  & ul {
+    @extend %ns-list-reset;
+  }
+
+  & li {
+    display: inline;
+    list-style: none;
+  }
+}
