@@ -1178,7 +1178,7 @@ nav {
   flex-grow: 1;
   float: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;}
 
 .c-subnav__link {
   display: -webkit-box;
@@ -1355,3 +1355,11 @@ nav {
     margin: 16px 0 0 0;
     padding-bottom: 16px;
     text-align: center; }
+
+/*------------------- added by Dirk DS --------*/
+  .c-nav__subnav {
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out;
+  }
