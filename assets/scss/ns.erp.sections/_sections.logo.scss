@@ -26,7 +26,7 @@
   }
 }
 
-.normalized-systems {
+.logo-normalized-systems {
 
   @include for-phone-only {
     padding-left: $spacer-md;
@@ -49,7 +49,7 @@
   }
 }
 
-.expander-exchange {
+.logo-expander-exchange, .logo-forum {
 
   @include for-phone-only {
     padding-left: $spacer-md;

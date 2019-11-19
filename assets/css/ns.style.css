@@ -1056,42 +1056,42 @@ header {
     justify-self: center; } }
 
 @media screen and (max-width: 599px) {
-  .normalized-systems {
+  .logo-normalized-systems {
     padding-left: 16px;
     max-height: 30px; } }
 
 @media screen and (min-width: 600px) {
-  .normalized-systems {
+  .logo-normalized-systems {
     padding-left: 16px;
     max-height: 30px; } }
 
 @media screen and (min-width: 1200px) {
-  .normalized-systems {
+  .logo-normalized-systems {
     padding-left: 4px;
     max-height: 55px; } }
 
 @media screen and (min-width: 1800px) {
-  .normalized-systems {
+  .logo-normalized-systems {
     padding-left: 4px;
     max-height: 55px; } }
 
 @media screen and (max-width: 599px) {
-  .expander-exchange {
+  .logo-expander-exchange, .logo-forum {
     padding-left: 16px;
     max-height: 30px; } }
 
 @media screen and (min-width: 600px) {
-  .expander-exchange {
+  .logo-expander-exchange, .logo-forum {
     padding-left: 16px;
     max-height: 30px; } }
 
 @media screen and (min-width: 1200px) {
-  .expander-exchange {
+  .logo-expander-exchange, .logo-forum {
     padding-left: 4px;
     max-height: 75px; } }
 
 @media screen and (min-width: 1800px) {
-  .expander-exchange {
+  .logo-expander-exchange, .logo-forum {
     padding-left: 4px;
     max-height: 75px; } }
 
